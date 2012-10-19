@@ -21,9 +21,7 @@
 #define ACTIONJUMP1  CCJumpBy::create(0.5,  CCPointMake(0,0), 30, 1)
 #define ACTIONJUMP2  CCJumpBy::create(0.3,  CCPointMake(0,0), 18, 1)
 #define ACTIONJUMP3  CCJumpBy::create(0.2,  CCPointMake(0,0), 12, 1)
-//
-//CCActionInterval* waves = CCWaves::actionWithWaves(5, 20, true, false, ccg(15,10), 5);  
-//CCActionInterval* shaky = CCShaky3D::actionWithRange(4, false, ccg(15,10), 5);  
+
 #include "cocos2d.h"
 
 using namespace cocos2d;
