@@ -151,12 +151,7 @@ void CArea::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
 	{
 		CCSprite *tapAnimal = (CCSprite *)_animalArr.objectAtIndex(i);
         
-        CCRect spriteRect = CCRectMake(tapAnimal->getPosition().x - (tapAnimal->getContentSize().width/2),
-                                       tapAnimal->getPosition().y - (tapAnimal->getContentSize().height/2),
-                                       tapAnimal->getContentSize().width,
-                                       tapAnimal->getContentSize().height);
-        
-        if (CCRect::CCRectContainsPoint(spriteRect, touchLocation))
+        if (CCRect::CCRectContainsPoint(tapAnimal->boundingBox(), touchLocation))
         {// 被tap的动物
                         
             CCFiniteTimeAction* ac = CCCallFuncN::actionWithTarget(this, callfuncN_selector(CArea::animalTapFinished));

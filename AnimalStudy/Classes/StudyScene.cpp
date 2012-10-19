@@ -143,13 +143,8 @@ void CStudy::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
 {    
     CCPoint touchLocation = pTouch->locationInView();		
     touchLocation = CCDirector::sharedDirector()->convertToGL(touchLocation);
-    
-    CCRect spriteRect = CCRectMake(_animal->getPosition().x - (_animal->getContentSize().width/2),
-                                   _animal->getPosition().y - (_animal->getContentSize().height/2),
-                                   _animal->getContentSize().width,
-                                   _animal->getContentSize().height);
-    
-    if (CCRect::CCRectContainsPoint(spriteRect, touchLocation))
+        
+    if (CCRect::CCRectContainsPoint(_animal->boundingBox(), touchLocation))
     {// 动物被tap
 
         _animal->runAction(CCSequence::actions(ACTIONSCALE1, ACTIONSCALE2, NULL));
