@@ -7,11 +7,12 @@
 //
 
 #include "AppDelegate.h"
+#include "MainSelectScene.h"
 
 #include "cocos2d.h"
-#include "HelloWorldScene.h"
-
+#include "SimpleAudioEngine.h"
 USING_NS_CC;
+
 
 AppDelegate::AppDelegate()
 {
@@ -30,19 +31,21 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     // enable High Resource Mode(2x, such as iphone4) and maintains low resource on other devices.
     // pDirector->enableRetinaDisplay(true);
-
+     
     // turn on display FPS
-    pDirector->setDisplayStats(true);
+    //pDirector->setDisplayStats(true);
 
     // set FPS. the default value is 1.0/60 if you don't call this
-    pDirector->setAnimationInterval(1.0 / 60);
+    //pDirector->setAnimationInterval(1.0 / 60);
 
     // create a scene. it's an autorelease object
-    CCScene *pScene = HelloWorld::scene();
+    CCScene *pScene = CMainSelect::scene();
 
     // run
     pDirector->runWithScene(pScene);
-
+    
+    CocosDenshion::SimpleAudioEngine::sharedEngine()->setBackgroundMusicVolume(0.4);//设置音量0.0-1.0
+    CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("ad-bgmusic.wav", true);
     return true;
 }
 
