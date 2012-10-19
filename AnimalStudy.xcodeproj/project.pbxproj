@@ -197,7 +197,6 @@
 		B5A18DFC162DE120001316FA /* btnReturnNor.png in Resources */ = {isa = PBXBuildFile; fileRef = B5A18DF8162DE11F001316FA /* btnReturnNor.png */; };
 		B5A18DFD162DE120001316FA /* btnReturnSel.png in Resources */ = {isa = PBXBuildFile; fileRef = B5A18DF9162DE120001316FA /* btnReturnSel.png */; };
 		B5A18E08162DEC7F001316FA /* StudyScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5A18E06162DEC7E001316FA /* StudyScene.cpp */; };
-		B5A18E0A162DF2B9001316FA /* studyfg1.png in Resources */ = {isa = PBXBuildFile; fileRef = B5A18E09162DF2B8001316FA /* studyfg1.png */; };
 		B5A18EC9162ECD65001316FA /* studyfg2.png in Resources */ = {isa = PBXBuildFile; fileRef = B5A18EC8162ECD62001316FA /* studyfg2.png */; };
 		B5A18ED8162EEF90001316FA /* pronunce in Resources */ = {isa = PBXBuildFile; fileRef = B5A18ED7162EEF8F001316FA /* pronunce */; };
 		B5A18EDA162F2D84001316FA /* animal in Resources */ = {isa = PBXBuildFile; fileRef = B5A18ED9162F2D83001316FA /* animal */; };
@@ -612,7 +611,6 @@
 		B5A18DF9162DE120001316FA /* btnReturnSel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnReturnSel.png; path = Resources/btnReturnSel.png; sourceTree = "<group>"; };
 		B5A18E06162DEC7E001316FA /* StudyScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StudyScene.cpp; sourceTree = "<group>"; };
 		B5A18E07162DEC7E001316FA /* StudyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyScene.h; sourceTree = "<group>"; };
-		B5A18E09162DF2B8001316FA /* studyfg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = studyfg1.png; path = Resources/studyfg1.png; sourceTree = "<group>"; };
 		B5A18EC8162ECD62001316FA /* studyfg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = studyfg2.png; path = Resources/studyfg2.png; sourceTree = "<group>"; };
 		B5A18ED7162EEF8F001316FA /* pronunce */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pronunce; path = Resources/pronunce; sourceTree = "<group>"; };
 		B5A18ED9162F2D83001316FA /* animal */ = {isa = PBXFileReference; lastKnownFileType = folder; name = animal; path = Resources/animal; sourceTree = "<group>"; };
@@ -694,7 +692,6 @@
 				B5A18EE3162F51F4001316FA /* area */,
 				B5A18ED9162F2D83001316FA /* animal */,
 				B5A18ED7162EEF8F001316FA /* pronunce */,
-				B5A18E09162DF2B8001316FA /* studyfg1.png */,
 				B5A18EC8162ECD62001316FA /* studyfg2.png */,
 				B5A18DF6162DE11E001316FA /* btnPronunceNor.png */,
 				B5A18DF7162DE11F001316FA /* btnPronunceSel.png */,
@@ -1518,7 +1515,6 @@
 				B5A18DFB162DE120001316FA /* btnPronunceSel.png in Resources */,
 				B5A18DFC162DE120001316FA /* btnReturnNor.png in Resources */,
 				B5A18DFD162DE120001316FA /* btnReturnSel.png in Resources */,
-				B5A18E0A162DF2B9001316FA /* studyfg1.png in Resources */,
 				B5A18EC9162ECD65001316FA /* studyfg2.png in Resources */,
 				B5A18ED8162EEF90001316FA /* pronunce in Resources */,
 				B5A18EDA162F2D84001316FA /* animal in Resources */,
