@@ -146,6 +146,19 @@ const char* CDataManager::getAreaObjectStudyAnimal(CCString area, int index)
     CCDictionary *spriteDict = getAreaObject(area, index);
     return spriteDict->valueForKey("StudyAnimal")->getCString();
 }
+
+float CDataManager::getAreaObjectScale(CCString area, int index)
+{
+    float fRet =  1;
+    CCDictionary *spriteDict = getAreaObject(area, index);
+    const CCString *cRet = spriteDict->valueForKey("Scale");
+    if (cRet->length() != 0)
+    {
+        fRet = cRet->floatValue();
+    }
+    return fRet;
+    
+}
 CCDictionary * CDataManager::getAreaObject(CCString area, int index)
 {
     CCDictionary *pAreaDict  = (CCDictionary*) _data->objectForKey(area.getCString());

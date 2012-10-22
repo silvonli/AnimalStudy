@@ -10,14 +10,16 @@
 #define AnimalStudy_DataManager_h
 
 
-#define CROSSFADEDELAY 1
-#define JINGYUANIMATIONDELAY 0.2                    // 鲸鱼动画时间
+#define CROSSFADEDELAY       1                      // 场景切换延时
 #define STUDYWORDFONTSSIZE   30                     // 学习字字号
 #define STUDYWORDSIZE        CCSizeMake(170, 100)   // 学习字大小
+#define RETURNBTNPOS         ccp(60, 708)           // 返回按钮位置
 
-#define ACTIONSCALE1 CCScaleTo::actionWithDuration(0.5, 1.1)
-#define ACTIONSCALE2 CCScaleTo::actionWithDuration(0.5, 1)
+// 放大动画
+#define ACTIONSCALE1 CCScaleTo::actionWithDuration(0.2, 1.1)
+#define ACTIONSCALE2 CCScaleTo::actionWithDuration(0.2, 1)
 
+// 跳跃动画
 #define ACTIONJUMP1  CCJumpBy::create(0.5,  CCPointMake(0,0), 30, 1)
 #define ACTIONJUMP2  CCJumpBy::create(0.3,  CCPointMake(0,0), 18, 1)
 #define ACTIONJUMP3  CCJumpBy::create(0.2,  CCPointMake(0,0), 12, 1)
@@ -57,6 +59,8 @@ public:
     const char* getAreaObjectWordCN(CCString area, int index);
     const char* getAreaObjectWordEN(CCString area, int index);
     const char* getAreaObjectStudyAnimal(CCString area, int index);
+    
+    float        getAreaObjectScale(CCString area, int index);
 
 private:
     CCDictionary* getAreaObject(CCString area, int index);

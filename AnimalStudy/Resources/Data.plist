@@ -10,9 +10,9 @@
 				<key>FrameName</key>
 				<string>haixing.png</string>
 				<key>PositionX</key>
-				<integer>200</integer>
+				<integer>341</integer>
 				<key>PositionY</key>
-				<integer>700</integer>
+				<integer>72</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -22,9 +22,9 @@
 				<key>FrameName</key>
 				<string>beike.png</string>
 				<key>PositionX</key>
-				<integer>700</integer>
+				<integer>116</integer>
 				<key>PositionY</key>
-				<integer>700</integer>
+				<integer>69</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -34,9 +34,9 @@
 				<key>FrameName</key>
 				<string>shanhu.png</string>
 				<key>PositionX</key>
-				<integer>700</integer>
+				<integer>899</integer>
 				<key>PositionY</key>
-				<integer>700</integer>
+				<integer>36</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -46,15 +46,35 @@
 				<key>FrameName</key>
 				<string>haicao01.png</string>
 				<key>PositionX</key>
-				<integer>900</integer>
+				<integer>637</integer>
 				<key>PositionY</key>
-				<integer>400</integer>
+				<integer>272</integer>
 				<key>HasAnimation</key>
 				<true/>
 				<key>AnimationFrameNum</key>
 				<integer>6</integer>
 				<key>AnimationFrameDelay</key>
-				<real>0.05</real>
+				<real>0.3</real>
+				<key>AnimationFrameNamePrefix</key>
+				<string>haicao</string>
+				<key>IsAnimal</key>
+				<false/>
+				<key>Scale</key>
+				<real>0.4</real>
+			</dict>
+			<dict>
+				<key>FrameName</key>
+				<string>haicao01.png</string>
+				<key>PositionX</key>
+				<integer>820</integer>
+				<key>PositionY</key>
+				<integer>101</integer>
+				<key>HasAnimation</key>
+				<true/>
+				<key>AnimationFrameNum</key>
+				<integer>6</integer>
+				<key>AnimationFrameDelay</key>
+				<real>0.22</real>
 				<key>AnimationFrameNamePrefix</key>
 				<string>haicao</string>
 				<key>IsAnimal</key>
@@ -64,15 +84,15 @@
 				<key>FrameName</key>
 				<string>qipao01.png</string>
 				<key>PositionX</key>
-				<integer>376</integer>
+				<integer>861</integer>
 				<key>PositionY</key>
-				<integer>400</integer>
+				<integer>313</integer>
 				<key>HasAnimation</key>
 				<true/>
 				<key>AnimationFrameNum</key>
 				<integer>12</integer>
 				<key>AnimationFrameDelay</key>
-				<real>0.05</real>
+				<real>0.1</real>
 				<key>AnimationFrameNamePrefix</key>
 				<string>qipao</string>
 				<key>IsAnimal</key>
@@ -80,11 +100,25 @@
 			</dict>
 			<dict>
 				<key>FrameName</key>
+				<string>shanhu.png</string>
+				<key>PositionX</key>
+				<integer>816</integer>
+				<key>PositionY</key>
+				<integer>-12</integer>
+				<key>HasAnimation</key>
+				<false/>
+				<key>IsAnimal</key>
+				<false/>
+				<key>Scale</key>
+				<real>0.7</real>
+			</dict>
+			<dict>
+				<key>FrameName</key>
 				<string>haima.png</string>
 				<key>PositionX</key>
-				<integer>800</integer>
+				<integer>96</integer>
 				<key>PositionY</key>
-				<integer>80</integer>
+				<integer>404</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -106,9 +140,9 @@
 				<key>FrameName</key>
 				<string>haigui.png</string>
 				<key>PositionX</key>
-				<integer>800</integer>
+				<integer>944</integer>
 				<key>PositionY</key>
-				<integer>800</integer>
+				<integer>238</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -130,9 +164,9 @@
 				<key>FrameName</key>
 				<string>haitun.png</string>
 				<key>PositionX</key>
-				<integer>800</integer>
+				<integer>403</integer>
 				<key>PositionY</key>
-				<integer>80</integer>
+				<integer>407</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -154,9 +188,9 @@
 				<key>FrameName</key>
 				<string>longxia.png</string>
 				<key>PositionX</key>
-				<integer>290</integer>
+				<integer>162</integer>
 				<key>PositionY</key>
-				<integer>80</integer>
+				<integer>272</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -178,9 +212,9 @@
 				<key>FrameName</key>
 				<string>pangxie.png</string>
 				<key>PositionX</key>
-				<integer>800</integer>
+				<integer>625</integer>
 				<key>PositionY</key>
-				<integer>366</integer>
+				<integer>104</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -202,9 +236,9 @@
 				<key>FrameName</key>
 				<string>shayu.png</string>
 				<key>PositionX</key>
-				<integer>800</integer>
+				<integer>589</integer>
 				<key>PositionY</key>
-				<integer>200</integer>
+				<integer>615</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -226,9 +260,9 @@
 				<key>FrameName</key>
 				<string>xiaoyu.png</string>
 				<key>PositionX</key>
-				<integer>490</integer>
+				<integer>255</integer>
 				<key>PositionY</key>
-				<integer>394</integer>
+				<integer>531</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -250,9 +284,9 @@
 				<key>FrameName</key>
 				<string>zhangyu.png</string>
 				<key>PositionX</key>
-				<integer>156</integer>
+				<integer>726</integer>
 				<key>PositionY</key>
-				<integer>632</integer>
+				<integer>413</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -290,9 +324,9 @@
 				<key>FrameName</key>
 				<string>laoying.png</string>
 				<key>PositionX</key>
-				<integer>80</integer>
+				<integer>793</integer>
 				<key>PositionY</key>
-				<integer>80</integer>
+				<integer>675</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -314,9 +348,9 @@
 				<key>FrameName</key>
 				<string>luotuo.png</string>
 				<key>PositionX</key>
-				<integer>800</integer>
+				<integer>633</integer>
 				<key>PositionY</key>
-				<integer>200</integer>
+				<integer>248</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -338,9 +372,9 @@
 				<key>FrameName</key>
 				<string>she.png</string>
 				<key>PositionX</key>
-				<integer>400</integer>
+				<integer>247</integer>
 				<key>PositionY</key>
-				<integer>80</integer>
+				<integer>252</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -362,9 +396,9 @@
 				<key>FrameName</key>
 				<string>tuoniao.png</string>
 				<key>PositionX</key>
-				<integer>400</integer>
+				<integer>99</integer>
 				<key>PositionY</key>
-				<integer>200</integer>
+				<integer>401</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -386,9 +420,9 @@
 				<key>FrameName</key>
 				<string>xiezi.png</string>
 				<key>PositionX</key>
-				<integer>100</integer>
+				<integer>303</integer>
 				<key>PositionY</key>
-				<integer>500</integer>
+				<integer>121</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -410,9 +444,9 @@
 				<key>FrameName</key>
 				<string>xiyi.png</string>
 				<key>PositionX</key>
-				<integer>1000</integer>
+				<integer>858</integer>
 				<key>PositionY</key>
-				<integer>80</integer>
+				<integer>82</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -450,9 +484,9 @@
 				<key>FrameName</key>
 				<string>eyu.png</string>
 				<key>PositionX</key>
-				<integer>100</integer>
+				<integer>187</integer>
 				<key>PositionY</key>
-				<integer>80</integer>
+				<integer>557</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -474,9 +508,9 @@
 				<key>FrameName</key>
 				<string>hema.png</string>
 				<key>PositionX</key>
-				<integer>200</integer>
+				<integer>813</integer>
 				<key>PositionY</key>
-				<integer>100</integer>
+				<integer>433</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -498,9 +532,9 @@
 				<key>FrameName</key>
 				<string>qingwa.png</string>
 				<key>PositionX</key>
-				<integer>300</integer>
+				<integer>283</integer>
 				<key>PositionY</key>
-				<integer>200</integer>
+				<integer>410</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -522,9 +556,9 @@
 				<key>FrameName</key>
 				<string>woniu.png</string>
 				<key>PositionX</key>
-				<integer>400</integer>
+				<integer>892</integer>
 				<key>PositionY</key>
-				<integer>200</integer>
+				<integer>126</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -546,9 +580,9 @@
 				<key>FrameName</key>
 				<string>wugui.png</string>
 				<key>PositionX</key>
-				<integer>600</integer>
+				<integer>517</integer>
 				<key>PositionY</key>
-				<integer>500</integer>
+				<integer>591</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -570,9 +604,9 @@
 				<key>FrameName</key>
 				<string>yazi.png</string>
 				<key>PositionX</key>
-				<integer>800</integer>
+				<integer>629</integer>
 				<key>PositionY</key>
-				<integer>80</integer>
+				<integer>167</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -594,9 +628,9 @@
 				<key>FrameName</key>
 				<string>hudie01.png</string>
 				<key>PositionX</key>
-				<integer>900</integer>
+				<integer>235</integer>
 				<key>PositionY</key>
-				<integer>400</integer>
+				<integer>135</integer>
 				<key>HasAnimation</key>
 				<true/>
 				<key>AnimationFrameNum</key>
@@ -640,9 +674,9 @@
 				<key>FrameName</key>
 				<string>zhuomuniao.png</string>
 				<key>PositionX</key>
-				<integer>300</integer>
+				<integer>517</integer>
 				<key>PositionY</key>
-				<integer>300</integer>
+				<integer>581</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -664,9 +698,9 @@
 				<key>FrameName</key>
 				<string>yezhu.png</string>
 				<key>PositionX</key>
-				<integer>200</integer>
+				<integer>867</integer>
 				<key>PositionY</key>
-				<integer>490</integer>
+				<integer>371</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -688,9 +722,9 @@
 				<key>FrameName</key>
 				<string>tuzi.png</string>
 				<key>PositionX</key>
-				<integer>200</integer>
+				<integer>465</integer>
 				<key>PositionY</key>
-				<integer>400</integer>
+				<integer>213</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -712,9 +746,9 @@
 				<key>FrameName</key>
 				<string>songshu.png</string>
 				<key>PositionX</key>
-				<integer>200</integer>
+				<integer>644</integer>
 				<key>PositionY</key>
-				<integer>400</integer>
+				<integer>401</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -736,9 +770,9 @@
 				<key>FrameName</key>
 				<string>laohu.png</string>
 				<key>PositionX</key>
-				<integer>800</integer>
+				<integer>775</integer>
 				<key>PositionY</key>
-				<integer>500</integer>
+				<integer>153</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -760,9 +794,9 @@
 				<key>FrameName</key>
 				<string>kongque.png</string>
 				<key>PositionX</key>
-				<integer>400</integer>
+				<integer>203</integer>
 				<key>PositionY</key>
-				<integer>80</integer>
+				<integer>402</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -784,9 +818,9 @@
 				<key>FrameName</key>
 				<string>houzi.png</string>
 				<key>PositionX</key>
-				<integer>80</integer>
+				<integer>154</integer>
 				<key>PositionY</key>
-				<integer>80</integer>
+				<integer>167</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -806,11 +840,23 @@
 			</dict>
 			<dict>
 				<key>FrameName</key>
+				<string>caocong.png</string>
+				<key>PositionX</key>
+				<integer>1020</integer>
+				<key>PositionY</key>
+				<integer>0</integer>
+				<key>HasAnimation</key>
+				<false/>
+				<key>IsAnimal</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>FrameName</key>
 				<string>xiaohudie01.png</string>
 				<key>PositionX</key>
-				<integer>900</integer>
+				<integer>956</integer>
 				<key>PositionY</key>
-				<integer>700</integer>
+				<integer>115</integer>
 				<key>HasAnimation</key>
 				<true/>
 				<key>AnimationFrameNum</key>
@@ -824,13 +870,19 @@
 			</dict>
 			<dict>
 				<key>FrameName</key>
-				<string>caocong.png</string>
+				<string>xiaohudie01.png</string>
 				<key>PositionX</key>
-				<integer>200</integer>
+				<integer>984</integer>
 				<key>PositionY</key>
-				<integer>700</integer>
+				<integer>59</integer>
 				<key>HasAnimation</key>
-				<false/>
+				<true/>
+				<key>AnimationFrameNum</key>
+				<integer>6</integer>
+				<key>AnimationFrameDelay</key>
+				<real>0.05</real>
+				<key>AnimationFrameNamePrefix</key>
+				<string>xiaohudie</string>
 				<key>IsAnimal</key>
 				<false/>
 			</dict>
@@ -854,9 +906,9 @@
 				<key>FrameName</key>
 				<string>xiniu.png</string>
 				<key>PositionX</key>
-				<integer>700</integer>
+				<integer>206</integer>
 				<key>PositionY</key>
-				<integer>300</integer>
+				<integer>166</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -878,9 +930,9 @@
 				<key>FrameName</key>
 				<string>lingyang.png</string>
 				<key>PositionX</key>
-				<integer>100</integer>
+				<integer>470</integer>
 				<key>PositionY</key>
-				<integer>80</integer>
+				<integer>494</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -902,9 +954,9 @@
 				<key>FrameName</key>
 				<string>lang.png</string>
 				<key>PositionX</key>
-				<integer>800</integer>
+				<integer>644</integer>
 				<key>PositionY</key>
-				<integer>800</integer>
+				<integer>498</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -926,9 +978,9 @@
 				<key>FrameName</key>
 				<string>daxiang.png</string>
 				<key>PositionX</key>
-				<integer>100</integer>
+				<integer>866</integer>
 				<key>PositionY</key>
-				<integer>800</integer>
+				<integer>207</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -939,8 +991,6 @@
 				<string>pronunce/Daxiang_En_Elephant.mp3</string>
 				<key>PronunceJS</key>
 				<string>pronunce/Daxiang_Js.mp3</string>
-				<key>WordCN</key>
-				<string>大象</string>
 				<key>WordEN</key>
 				<string>elephant</string>
 				<key>StudyAnimal</key>
@@ -950,9 +1000,9 @@
 				<key>FrameName</key>
 				<string>changjinglu.png</string>
 				<key>PositionX</key>
-				<integer>800</integer>
+				<integer>124</integer>
 				<key>PositionY</key>
-				<integer>80</integer>
+				<integer>542</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -974,9 +1024,9 @@
 				<key>FrameName</key>
 				<string>baozi.png</string>
 				<key>PositionX</key>
-				<integer>400</integer>
+				<integer>436</integer>
 				<key>PositionY</key>
-				<integer>500</integer>
+				<integer>282</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -998,9 +1048,9 @@
 				<key>FrameName</key>
 				<string>banma.png</string>
 				<key>PositionX</key>
-				<integer>300</integer>
+				<integer>881</integer>
 				<key>PositionY</key>
-				<integer>700</integer>
+				<integer>502</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>
@@ -1022,9 +1072,9 @@
 				<key>FrameName</key>
 				<string>guanmu.png</string>
 				<key>PositionX</key>
-				<integer>200</integer>
+				<integer>30</integer>
 				<key>PositionY</key>
-				<integer>700</integer>
+				<integer>68</integer>
 				<key>HasAnimation</key>
 				<false/>
 				<key>IsAnimal</key>

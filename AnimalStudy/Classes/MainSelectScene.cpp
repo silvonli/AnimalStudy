@@ -58,10 +58,10 @@ bool CMainSelect::init()
                                                         this,
                                                         menu_selector(CMainSelect::prairieCallback) );
     
-    pLack->setPosition(  ccp(60, size.height-60) );
-    pForest->setPosition(  ccp(500, size.height-100) );
-    pDesert->setPosition(  ccp(700, size.height-300) );
-    pPrairie->setPosition(  ccp(800, size.height-600) );
+    pLack->setPosition(    ccp(171, 437) );
+    pForest->setPosition(  ccp(539, 401) );
+    pDesert->setPosition(  ccp(864, 411) );
+    pPrairie->setPosition( ccp(392, 208) );
     
    
     CCMenu* pMenu = CCMenu::create(pLack, pForest, pDesert, pPrairie, NULL);
@@ -75,18 +75,28 @@ bool CMainSelect::init()
     
     // 创建对象
     CCSprite *sprite = CCSprite::spriteWithSpriteFrameName("jingyu01.png");        
-    sprite->setPosition(ccp(500,500));
+    sprite->setPosition(ccp(920,220));
     spriteSheet->addChild(sprite, 0);
           
-    CCArray *arrFrames = CCArray::array(); // 动画帧数组
-    for(int i=1; i<=11; ++i) 
+    CCArray *arrShang = CCArray::array(); // 动画帧数组
+    for(int i=1; i<=8; ++i)
     {     
         CCString *name = CCString::stringWithFormat("jingyu%02d.png", i);
-        arrFrames->addObject(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(name->getCString()));
+        arrShang->addObject(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(name->getCString()));
     }
-        
-    CCAnimation *anim = CCAnimation::animationWithSpriteFrames(arrFrames, JINGYUANIMATIONDELAY);
-    sprite->runAction(CCRepeatForever::actionWithAction(CCAnimate::actionWithAnimation(anim)));
+    
+    CCArray *arrPeng = CCArray::array(); // 动画帧数组
+    for(int i=9; i<=11; ++i)
+    {
+        CCString *name = CCString::stringWithFormat("jingyu%02d.png", i);
+        arrPeng->addObject(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(name->getCString()));
+    }
+    
+    CCFiniteTimeAction *delay = CCDelayTime::actionWithDuration(1);
+
+    CCAnimate* anShang = CCAnimate::actionWithAnimation(CCAnimation::animationWithSpriteFrames(arrShang, 0.2));
+    CCAnimate* anPeng  = CCAnimate::actionWithAnimation(CCAnimation::animationWithSpriteFrames(arrPeng, 0.2));
+    sprite->runAction(CCRepeatForever::actionWithAction((CCActionInterval*)CCSequence::actions(anShang, delay, anPeng, anPeng->reverse(), anShang->reverse(),delay,delay, delay ,NULL)));
     return true;
 }
 

@@ -70,7 +70,7 @@ bool CArea::initWithName(CCString name)
                                                        this,
                                                        menu_selector(CArea::btnReturnCallback) );
     
-    pReturn->setPosition(  ccp(60, size.height-60) );
+    pReturn->setPosition(RETURNBTNPOS);
 
     // create menu, it's an autorelease object
     CCMenu* pMenu = CCMenu::create(pReturn, NULL);
@@ -89,10 +89,11 @@ bool CArea::initWithName(CCString name)
         const char *frameName = dataManager->getAreaObjectFrameName(_areaName, i);
         CCPoint pos           = dataManager->getAreaObjectPosition(_areaName, i);
         bool    isAnimal      = dataManager->areaObjectIsAnimal(_areaName, i);
-        
+        float   fSclae        = dataManager->getAreaObjectScale(_areaName, i);
         CCSprite *sprite = CCSprite::spriteWithSpriteFrameName(frameName);        
         sprite->setPosition(pos);
         sprite->setTag(i);
+        sprite->setScale(fSclae);
         spriteSheet->addChild(sprite, 0, i);
         
         // 带动画

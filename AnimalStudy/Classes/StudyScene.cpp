@@ -86,9 +86,9 @@ bool CStudy::initWithAreaAndIndex(CCString area, int nIndex)
                                                         this,
                                                         menu_selector(CStudy::btnEnglishCallback) );
    
-    pReturn->setPosition(  ccp(60,               size.height-60) );
-    pChinese->setPosition( ccp(size.width - 300, 200) );
-    pEnglish->setPosition( ccp(size.width - 724, 200) );
+    pReturn->setPosition(  RETURNBTNPOS );
+    pChinese->setPosition( ccp(824, 118) );
+    pEnglish->setPosition( ccp(200, 118) );
     
     // 文字
     CCLabelTTF* wordCN = CCLabelTTF::labelWithString(dataManager->getAreaObjectWordCN(_areaName, _index), STUDYWORDSIZE, kCCTextAlignmentCenter, kCCVerticalTextAlignmentCenter, "KaiTi_GB2312", STUDYWORDFONTSSIZE);

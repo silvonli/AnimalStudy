@@ -41,7 +41,17 @@ static AppDelegate s_sharedApplication;
     viewController.view = __glView;
 
     // Set RootViewController to window
-    [window addSubview: viewController.view];
+    NSString *reqSysVer = @"6.0";
+    NSString *currSysVer = [[UIDevice currentDevice] systemVersion];
+    if ([currSysVer compare:reqSysVer options:NSNumericSearch] != NSOrderedAscending)
+    {
+        [window setRootViewController:viewController]; //iOS 6
+    } else
+    {
+        [window addSubview: viewController.view]; //iOS 5 or less
+    }
+    // Set RootViewController to window
+    //[window addSubview: viewController.view];
     [window makeKeyAndVisible];
 
     [[UIApplication sharedApplication] setStatusBarHidden: YES];
@@ -49,7 +59,6 @@ static AppDelegate s_sharedApplication;
     cocos2d::CCApplication::sharedApplication()->run();
     return YES;
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     /*
