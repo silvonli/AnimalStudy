@@ -314,7 +314,7 @@
 		<key>StudyBackgroundFile</key>
 		<string>area/ocean-studybg.png</string>
 		<key>StudyForegroundFile</key>
-		<string>studyfg2.png</string>
+		<string>studyfg.png</string>
 	</dict>
 	<key>desert</key>
 	<dict>
@@ -474,7 +474,7 @@
 		<key>StudyBackgroundFile</key>
 		<string>area/desert-studybg.png</string>
 		<key>StudyForegroundFile</key>
-		<string>studyfg2.png</string>
+		<string>studyfg.png</string>
 	</dict>
 	<key>lack</key>
 	<dict>
@@ -664,7 +664,7 @@
 		<key>StudyBackgroundFile</key>
 		<string>area/lack-studybg.png</string>
 		<key>StudyForegroundFile</key>
-		<string>studyfg2.png</string>
+		<string>studyfg.png</string>
 	</dict>
 	<key>forest</key>
 	<dict>
@@ -896,7 +896,7 @@
 		<key>StudyBackgroundFile</key>
 		<string>area/forest-studybg.png</string>
 		<key>StudyForegroundFile</key>
-		<string>studyfg2.png</string>
+		<string>studyfg.png</string>
 	</dict>
 	<key>prairie</key>
 	<dict>
@@ -991,6 +991,8 @@
 				<string>pronunce/Daxiang_En_Elephant.mp3</string>
 				<key>PronunceJS</key>
 				<string>pronunce/Daxiang_Js.mp3</string>
+                <key>WordCN</key>
+				<string>大象</string>
 				<key>WordEN</key>
 				<string>elephant</string>
 				<key>StudyAnimal</key>
@@ -1090,7 +1092,7 @@
 		<key>StudyBackgroundFile</key>
 		<string>area/prairie-studybg.png</string>
 		<key>StudyForegroundFile</key>
-		<string>studyfg2.png</string>
+		<string>studyfg.png</string>
 	</dict>
 </dict>
 </plist>

@@ -35,7 +35,8 @@
  
 */
 // Override to allow orientations other than the default landscape orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
     return UIInterfaceOrientationIsLandscape( interfaceOrientation );
     
     // switch to this line if you want to set portrait view

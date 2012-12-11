@@ -10,10 +10,21 @@
 #define AnimalStudy_DataManager_h
 
 
-#define CROSSFADEDELAY       1                      // 场景切换延时
-#define STUDYWORDFONTSSIZE   30                     // 学习字字号
-#define STUDYWORDSIZE        CCSizeMake(170, 100)   // 学习字大小
-#define RETURNBTNPOS         ccp(60, 708)           // 返回按钮位置
+#define CROSSFADEDELAY          1                       // 场景切换延时
+
+// 学习文字
+#define STUDYWORDFONTSNAME_CN   "STHeitiSC-Medium"      // 字体
+#define STUDYWORDFONTSNAME_EN   "Arial-BoldMT"
+#define STUDYWORDFONTSSIZE_CN   38                      // 字号
+#define STUDYWORDFONTSSIZE_EN   30
+#define STUDYWORDSIZE_CN        CCSizeMake(190, 90)     // 位置
+#define STUDYWORDSIZE_EN        CCSizeMake(190, 100)
+#define STUDYWORDCOLOR          ccc3(80,64,4)           // 颜色
+
+// 按钮位置
+#define CHINESEBTNPOS           ccp(824, 118)
+#define ENGILISHBTNPOS          ccp(200, 118)
+#define RETURNBTNPOS            ccp(60, 708)            
 
 // 放大动画
 #define ACTIONSCALE1 CCScaleTo::actionWithDuration(0.2, 1.1)

@@ -87,18 +87,18 @@ bool CStudy::initWithAreaAndIndex(CCString area, int nIndex)
                                                         menu_selector(CStudy::btnEnglishCallback) );
    
     pReturn->setPosition(  RETURNBTNPOS );
-    pChinese->setPosition( ccp(824, 118) );
-    pEnglish->setPosition( ccp(200, 118) );
+    pChinese->setPosition( CHINESEBTNPOS );
+    pEnglish->setPosition( ENGILISHBTNPOS );
     
     // 文字
-    CCLabelTTF* wordCN = CCLabelTTF::labelWithString(dataManager->getAreaObjectWordCN(_areaName, _index), STUDYWORDSIZE, kCCTextAlignmentCenter, kCCVerticalTextAlignmentCenter, "KaiTi_GB2312", STUDYWORDFONTSSIZE);
+    CCLabelTTF* wordCN = CCLabelTTF::labelWithString(dataManager->getAreaObjectWordCN(_areaName, _index), STUDYWORDSIZE_CN, kCCTextAlignmentCenter, kCCVerticalTextAlignmentCenter, STUDYWORDFONTSNAME_CN, STUDYWORDFONTSSIZE_CN);
     wordCN->setAnchorPoint(ccp(0,0));
-    wordCN->setColor(ccBLACK);
+    wordCN->setColor(STUDYWORDCOLOR);
     pChinese->addChild(wordCN);
     
-    CCLabelTTF* wordEN = CCLabelTTF::labelWithString(dataManager->getAreaObjectWordEN(_areaName, _index),STUDYWORDSIZE, kCCTextAlignmentCenter, kCCVerticalTextAlignmentCenter, "Courier-Bold", STUDYWORDFONTSSIZE);
+    CCLabelTTF* wordEN = CCLabelTTF::labelWithString(dataManager->getAreaObjectWordEN(_areaName, _index),STUDYWORDSIZE_EN, kCCTextAlignmentCenter, kCCVerticalTextAlignmentCenter, STUDYWORDFONTSNAME_EN, STUDYWORDFONTSSIZE_EN);
     wordEN->setAnchorPoint(ccp(0,0));
-    wordEN->setColor(ccBLACK);
+    wordEN->setColor(STUDYWORDCOLOR);
     pEnglish->addChild(wordEN);
     
     // create menu, it's an autorelease object
