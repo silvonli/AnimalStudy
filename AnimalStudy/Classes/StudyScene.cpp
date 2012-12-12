@@ -150,7 +150,10 @@ void CStudy::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
         _animal->runAction(CCSequence::actions(ACTIONSCALE1, ACTIONSCALE2, NULL));
   
         const char * pronunce = dataManager->getAreaObjectPronunceJS(_areaName, _index);
-        CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(pronunce, false);
+        if (strlen(pronunce) != 0)
+        {
+            CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(pronunce, false);
+        }
     }
 }
 
