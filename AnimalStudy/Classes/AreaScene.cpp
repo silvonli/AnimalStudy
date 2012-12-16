@@ -148,7 +148,7 @@ void CArea::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
     CCPoint touchLocation = pTouch->locationInView();		
     touchLocation = CCDirector::sharedDirector()->convertToGL(touchLocation);
     
-    for(int i = _animalArr.count()-1; i>=0 ; ++i)
+    for(int i = _animalArr.count()-1; i>=0 ; --i)
 	{
 		CCSprite *tapAnimal = (CCSprite *)_animalArr.objectAtIndex(i);
         

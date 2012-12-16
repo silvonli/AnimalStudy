@@ -16,12 +16,6 @@
 		B56F7D3F160E124000B368F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56F7D3E160E124000B368F0 /* Foundation.framework */; };
 		B56F7D41160E124000B368F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56F7D40160E124000B368F0 /* CoreGraphics.framework */; };
 		B56F7D4D160E124000B368F0 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = B56F7D4C160E124000B368F0 /* Icon-72.png */; };
-		B56F7D4F160E124000B368F0 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B56F7D4E160E124000B368F0 /* Icon-Small-50.png */; };
-		B56F7D51160E124000B368F0 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = B56F7D50160E124000B368F0 /* Icon-Small.png */; };
-		B56F7D53160E124000B368F0 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B56F7D52160E124000B368F0 /* Icon-Small@2x.png */; };
-		B56F7D55160E124000B368F0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B56F7D54160E124000B368F0 /* Icon.png */; };
-		B56F7D57160E124000B368F0 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B56F7D56160E124000B368F0 /* Icon@2x.png */; };
-		B56F7D59160E124000B368F0 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = B56F7D58160E124000B368F0 /* iTunesArtwork */; };
 		B56F7D5F160E124000B368F0 /* CCAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B56F7D5E160E124000B368F0 /* CCAction.cpp */; };
 		B56F7D62160E124000B368F0 /* CCActionCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B56F7D61160E124000B368F0 /* CCActionCamera.cpp */; };
 		B56F7D65160E124000B368F0 /* CCActionCatmullRom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B56F7D64160E124000B368F0 /* CCActionCatmullRom.cpp */; };
@@ -206,7 +200,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B56F7D2E160E124000B368F0 /* AnimalStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56F7D2E160E124000B368F0 /* 土娃动物乐园.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "土娃动物乐园.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56F7D32160E124000B368F0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B56F7D34160E124000B368F0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B56F7D36160E124000B368F0 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -216,12 +210,6 @@
 		B56F7D3E160E124000B368F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B56F7D40160E124000B368F0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B56F7D4C160E124000B368F0 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Resources/Icon-72.png"; sourceTree = "<group>"; };
-		B56F7D4E160E124000B368F0 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Resources/Icon-Small-50.png"; sourceTree = "<group>"; };
-		B56F7D50160E124000B368F0 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Resources/Icon-Small.png"; sourceTree = "<group>"; };
-		B56F7D52160E124000B368F0 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Resources/Icon-Small@2x.png"; sourceTree = "<group>"; };
-		B56F7D54160E124000B368F0 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
-		B56F7D56160E124000B368F0 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/Icon@2x.png"; sourceTree = "<group>"; };
-		B56F7D58160E124000B368F0 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = Resources/iTunesArtwork; sourceTree = "<group>"; };
 		B56F7D5A160E124000B368F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		B56F7D5E160E124000B368F0 /* CCAction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CCAction.cpp; path = libs/cocos2dx/actions/CCAction.cpp; sourceTree = "<group>"; };
 		B56F7D60160E124000B368F0 /* CCAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CCAction.h; path = libs/cocos2dx/actions/CCAction.h; sourceTree = "<group>"; };
@@ -650,7 +638,7 @@
 		B56F7D2F160E124000B368F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B56F7D2E160E124000B368F0 /* AnimalStudy.app */,
+				B56F7D2E160E124000B368F0 /* 土娃动物乐园.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -698,12 +686,6 @@
 				B598D178167694F3003CC0C2 /* bgmusic.mp3 */,
 				B598D17C16769B28003CC0C2 /* Default-Landscape.png */,
 				B56F7D4C160E124000B368F0 /* Icon-72.png */,
-				B56F7D4E160E124000B368F0 /* Icon-Small-50.png */,
-				B56F7D50160E124000B368F0 /* Icon-Small.png */,
-				B56F7D52160E124000B368F0 /* Icon-Small@2x.png */,
-				B56F7D54160E124000B368F0 /* Icon.png */,
-				B56F7D56160E124000B368F0 /* Icon@2x.png */,
-				B56F7D58160E124000B368F0 /* iTunesArtwork */,
 				B56F7D5A160E124000B368F0 /* Info.plist */,
 			);
 			name = Resources;
@@ -1464,7 +1446,7 @@
 			);
 			name = AnimalStudy;
 			productName = AnimalStudy;
-			productReference = B56F7D2E160E124000B368F0 /* AnimalStudy.app */;
+			productReference = B56F7D2E160E124000B368F0 /* 土娃动物乐园.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1498,12 +1480,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B56F7D4D160E124000B368F0 /* Icon-72.png in Resources */,
-				B56F7D4F160E124000B368F0 /* Icon-Small-50.png in Resources */,
-				B56F7D51160E124000B368F0 /* Icon-Small.png in Resources */,
-				B56F7D53160E124000B368F0 /* Icon-Small@2x.png in Resources */,
-				B56F7D55160E124000B368F0 /* Icon.png in Resources */,
-				B56F7D57160E124000B368F0 /* Icon@2x.png in Resources */,
-				B56F7D59160E124000B368F0 /* iTunesArtwork in Resources */,
 				B56F7DE1160E124100B368F0 /* ChangeLog in Resources */,
 				B5A18DFA162DE120001316FA /* btnPronunceNor.png in Resources */,
 				B5A18DFB162DE120001316FA /* btnPronunceSel.png in Resources */,
@@ -1768,7 +1744,7 @@
 					"-lxml2",
 					"-lz",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "土娃动物乐园";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1788,7 +1764,7 @@
 					"-lxml2",
 					"-lz",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "土娃动物乐园";
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
