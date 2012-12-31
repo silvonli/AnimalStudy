@@ -91,12 +91,15 @@ bool CMainSelect::init()
         CCString *name = CCString::stringWithFormat("jingyu%02d.png", i);
         arrPeng->addObject(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(name->getCString()));
     }
+    CCArray *arrPengRev = CCArray::arrayWithArray(arrPeng);
+    arrPengRev->reverseObjects();
+    arrPeng->addObjectsFromArray(arrPengRev);
     
     CCFiniteTimeAction *delay = CCDelayTime::actionWithDuration(1);
 
-    CCAnimate* anShang = CCAnimate::actionWithAnimation(CCAnimation::animationWithSpriteFrames(arrShang, 0.2));
-    CCAnimate* anPeng  = CCAnimate::actionWithAnimation(CCAnimation::animationWithSpriteFrames(arrPeng, 0.2));
-    sprite->runAction(CCRepeatForever::actionWithAction((CCActionInterval*)CCSequence::actions(anShang, delay, anPeng, anPeng->reverse(), anShang->reverse(),delay,delay, delay ,NULL)));
+    CCAnimate* anShang = CCAnimate::actionWithAnimation(CCAnimation::animationWithSpriteFrames(arrShang, 0.25));
+    CCAnimate* anPeng  = CCAnimate::actionWithAnimation(CCAnimation::animationWithSpriteFrames(arrPeng, 0.15));
+    sprite->runAction(CCRepeatForever::actionWithAction((CCActionInterval*)CCSequence::actions(anShang, delay, anPeng,anPeng, anPeng, anPeng, anPeng, anShang->reverse(),delay,delay,delay,NULL)));
     return true;
 }
 
