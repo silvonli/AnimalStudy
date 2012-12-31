@@ -109,7 +109,12 @@ bool CArea::initWithName(CCString name)
                 CCString *name = CCString::stringWithFormat("%s%02d.png",prefix, j);
                 arrFrames->addObject(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(name->getCString()));
             }
-            
+            if (dataManager->isAreaObjectAnimationFrameNeedReverse(_areaName, i))
+            {
+                CCArray *arrFramesRev = CCArray::arrayWithArray(arrFrames);
+                arrFramesRev->reverseObjects();
+                arrFrames->addObjectsFromArray(arrFramesRev);
+            }
             CCAnimation *anim = CCAnimation::animationWithSpriteFrames(arrFrames, delay);
             sprite->runAction(CCRepeatForever::actionWithAction(CCAnimate::actionWithAnimation(anim)));
         }

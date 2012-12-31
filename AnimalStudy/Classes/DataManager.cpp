@@ -94,6 +94,11 @@ int CDataManager::getAreaObjectAnimationFrameNum(CCString area, int index)
     CCDictionary *spriteDict = getAreaObject(area, index);
     return spriteDict->valueForKey("AnimationFrameNum")->intValue();
 }
+bool CDataManager::isAreaObjectAnimationFrameNeedReverse(CCString area, int index)
+{
+    CCDictionary *spriteDict = getAreaObject(area, index);
+    return spriteDict->valueForKey("AnimationFrameNeedReverse")->boolValue();
+}
 float CDataManager::getAreaObjectAnimationFrameDelay(CCString area, int index)
 {
     CCDictionary *spriteDict = getAreaObject(area, index);

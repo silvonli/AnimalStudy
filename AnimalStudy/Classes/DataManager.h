@@ -61,6 +61,7 @@ public:
     CCPoint     getAreaObjectPosition(CCString area, int index);
     bool        isAreaObjectHasAnimation(CCString area, int index);
     int         getAreaObjectAnimationFrameNum(CCString area, int index);
+    bool        isAreaObjectAnimationFrameNeedReverse(CCString area, int index);
     float       getAreaObjectAnimationFrameDelay(CCString area, int index);
     const char* getAreaObjectAnimationFrameNamePrefix(CCString area, int index);
     bool        areaObjectIsAnimal(CCString area, int index);

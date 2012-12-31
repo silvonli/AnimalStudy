@@ -635,8 +635,10 @@
 				<true/>
 				<key>AnimationFrameNum</key>
 				<integer>10</integer>
+				<key>AnimationFrameNeedReverse</key>
+				<true/>
 				<key>AnimationFrameDelay</key>
-				<real>0.05</real>
+				<real>0.08</real>
 				<key>AnimationFrameNamePrefix</key>
 				<string>hudie</string>
 				<key>IsAnimal</key>
@@ -991,7 +993,7 @@
 				<string>pronunce/Daxiang_En_Elephant.mp3</string>
 				<key>PronunceJS</key>
 				<string>pronunce/Daxiang_Js.mp3</string>
-                <key>WordCN</key>
+				<key>WordCN</key>
 				<string>大象</string>
 				<key>WordEN</key>
 				<string>elephant</string>
