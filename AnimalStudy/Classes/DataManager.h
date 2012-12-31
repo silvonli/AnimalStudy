@@ -70,7 +70,7 @@ public:
     const char* getAreaObjectPronunceJS(CCString area, int index);
     const char* getAreaObjectWordCN(CCString area, int index);
     const char* getAreaObjectWordEN(CCString area, int index);
-    const char* getAreaObjectStudyAnimal(CCString area, int index);
+    const char* getAreaObjectStudyPic(CCString area, int index);
     
     float        getAreaObjectScale(CCString area, int index);
 

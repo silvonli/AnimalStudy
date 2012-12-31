@@ -65,7 +65,7 @@ bool CStudy::initWithAreaAndIndex(CCString area, int nIndex)
     this->addChild(fg);
     
     // 动物
-    _animal = CCSprite::spriteWithFile(dataManager->getAreaObjectStudyAnimal(_areaName, _index));
+    _animal = CCSprite::spriteWithFile(dataManager->getAreaObjectStudyPic(_areaName, _index));
     _animal->setPosition( ccp(size.width/2, size.height/2) );
     this->addChild(_animal);
    

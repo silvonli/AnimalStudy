@@ -183,6 +183,7 @@
 		B56F7FA2160E124400B368F0 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B56F7FA1160E124400B368F0 /* AppDelegate.cpp */; };
 		B56F7FE7161083B300B368F0 /* DataManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B56F7FE6161083B200B368F0 /* DataManager.cpp */; };
 		B56F7FEB16108BC500B368F0 /* AreaScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B56F7FEA16108BC400B368F0 /* AreaScene.cpp */; };
+		B583492916916B4A00377EDC /* studypic in Resources */ = {isa = PBXBuildFile; fileRef = B583492816916B4A00377EDC /* studypic */; };
 		B598D179167694F3003CC0C2 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B598D178167694F3003CC0C2 /* bgmusic.mp3 */; };
 		B598D17B167696F6003CC0C2 /* studyfg.png in Resources */ = {isa = PBXBuildFile; fileRef = B598D17A167696F6003CC0C2 /* studyfg.png */; };
 		B598D17D16769B28003CC0C2 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = B598D17C16769B28003CC0C2 /* Default-Landscape.png */; };
@@ -192,7 +193,6 @@
 		B5A18DFD162DE120001316FA /* btnReturnSel.png in Resources */ = {isa = PBXBuildFile; fileRef = B5A18DF9162DE120001316FA /* btnReturnSel.png */; };
 		B5A18E08162DEC7F001316FA /* StudyScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5A18E06162DEC7E001316FA /* StudyScene.cpp */; };
 		B5A18ED8162EEF90001316FA /* pronunce in Resources */ = {isa = PBXBuildFile; fileRef = B5A18ED7162EEF8F001316FA /* pronunce */; };
-		B5A18EDA162F2D84001316FA /* animal in Resources */ = {isa = PBXBuildFile; fileRef = B5A18ED9162F2D83001316FA /* animal */; };
 		B5A18EE4162F51F5001316FA /* area in Resources */ = {isa = PBXBuildFile; fileRef = B5A18EE3162F51F4001316FA /* area */; };
 		B5A18EEA16303C7C001316FA /* MainSelectScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5A18EE916303C7B001316FA /* MainSelectScene.cpp */; };
 		B5A18EEC163045EE001316FA /* mainsel in Resources */ = {isa = PBXBuildFile; fileRef = B5A18EEB163045ED001316FA /* mainsel */; };
@@ -589,6 +589,7 @@
 		B56F7FE8161083C900B368F0 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		B56F7FE916108BAE00B368F0 /* AreaScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaScene.h; sourceTree = "<group>"; };
 		B56F7FEA16108BC400B368F0 /* AreaScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AreaScene.cpp; sourceTree = "<group>"; };
+		B583492816916B4A00377EDC /* studypic */ = {isa = PBXFileReference; lastKnownFileType = folder; name = studypic; path = Resources/studypic; sourceTree = "<group>"; };
 		B598D178167694F3003CC0C2 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bgmusic.mp3; path = Resources/bgmusic.mp3; sourceTree = "<group>"; };
 		B598D17A167696F6003CC0C2 /* studyfg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = studyfg.png; path = Resources/studyfg.png; sourceTree = "<group>"; };
 		B598D17C16769B28003CC0C2 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape.png"; path = "Resources/Default-Landscape.png"; sourceTree = "<group>"; };
@@ -599,7 +600,6 @@
 		B5A18E06162DEC7E001316FA /* StudyScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StudyScene.cpp; sourceTree = "<group>"; };
 		B5A18E07162DEC7E001316FA /* StudyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyScene.h; sourceTree = "<group>"; };
 		B5A18ED7162EEF8F001316FA /* pronunce */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pronunce; path = Resources/pronunce; sourceTree = "<group>"; };
-		B5A18ED9162F2D83001316FA /* animal */ = {isa = PBXFileReference; lastKnownFileType = folder; name = animal; path = Resources/animal; sourceTree = "<group>"; };
 		B5A18EE3162F51F4001316FA /* area */ = {isa = PBXFileReference; lastKnownFileType = folder; name = area; path = Resources/area; sourceTree = "<group>"; };
 		B5A18EE916303C7B001316FA /* MainSelectScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainSelectScene.cpp; sourceTree = "<group>"; };
 		B5A18EEB163045ED001316FA /* mainsel */ = {isa = PBXFileReference; lastKnownFileType = folder; name = mainsel; path = Resources/mainsel; sourceTree = "<group>"; };
@@ -673,10 +673,9 @@
 		B56F7D43160E124000B368F0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B5A18EEE16312EF9001316FA /* Data.plist */,
+				B583492816916B4A00377EDC /* studypic */,
 				B5A18EEB163045ED001316FA /* mainsel */,
 				B5A18EE3162F51F4001316FA /* area */,
-				B5A18ED9162F2D83001316FA /* animal */,
 				B5A18ED7162EEF8F001316FA /* pronunce */,
 				B5A18DF6162DE11E001316FA /* btnPronunceNor.png */,
 				B5A18DF7162DE11F001316FA /* btnPronunceSel.png */,
@@ -686,6 +685,7 @@
 				B598D178167694F3003CC0C2 /* bgmusic.mp3 */,
 				B598D17C16769B28003CC0C2 /* Default-Landscape.png */,
 				B56F7D4C160E124000B368F0 /* Icon-72.png */,
+				B5A18EEE16312EF9001316FA /* Data.plist */,
 				B56F7D5A160E124000B368F0 /* Info.plist */,
 			);
 			name = Resources;
@@ -1486,13 +1486,13 @@
 				B5A18DFC162DE120001316FA /* btnReturnNor.png in Resources */,
 				B5A18DFD162DE120001316FA /* btnReturnSel.png in Resources */,
 				B5A18ED8162EEF90001316FA /* pronunce in Resources */,
-				B5A18EDA162F2D84001316FA /* animal in Resources */,
 				B5A18EE4162F51F5001316FA /* area in Resources */,
 				B5A18EEC163045EE001316FA /* mainsel in Resources */,
 				B5A18EEF16312EFA001316FA /* Data.plist in Resources */,
 				B598D179167694F3003CC0C2 /* bgmusic.mp3 in Resources */,
 				B598D17B167696F6003CC0C2 /* studyfg.png in Resources */,
 				B598D17D16769B28003CC0C2 /* Default-Landscape.png in Resources */,
+				B583492916916B4A00377EDC /* studypic in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

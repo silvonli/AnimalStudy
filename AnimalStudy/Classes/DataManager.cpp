@@ -146,10 +146,10 @@ const char* CDataManager::getAreaObjectWordEN(CCString area, int index)
     CCDictionary *spriteDict = getAreaObject(area, index);
     return spriteDict->valueForKey("WordEN")->getCString();
 }
-const char* CDataManager::getAreaObjectStudyAnimal(CCString area, int index)
+const char* CDataManager::getAreaObjectStudyPic(CCString area, int index)
 {
     CCDictionary *spriteDict = getAreaObject(area, index);
-    return spriteDict->valueForKey("StudyAnimal")->getCString();
+    return spriteDict->valueForKey("StudyPic")->getCString();
 }
 
 float CDataManager::getAreaObjectScale(CCString area, int index)
