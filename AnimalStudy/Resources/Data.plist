@@ -656,6 +656,18 @@
 				<key>StudyAnimal</key>
 				<string>animal/hudie.png</string>
 			</dict>
+			<dict>
+				<key>FrameName</key>
+				<string>hemawater.png</string>
+				<key>PositionX</key>
+				<integer>800</integer>
+				<key>PositionY</key>
+				<integer>332</integer>
+				<key>HasAnimation</key>
+				<false/>
+				<key>CanStudy</key>
+				<false/>
+			</dict>
 		</array>
 		<key>BackgroundFile</key>
 		<string>area/lack-bg.png</string>
