@@ -200,7 +200,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B56F7D2E160E124000B368F0 /* 土娃动物乐园.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "土娃动物乐园.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56F7D2E160E124000B368F0 /* AnimalStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56F7D32160E124000B368F0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B56F7D34160E124000B368F0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B56F7D36160E124000B368F0 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -638,7 +638,7 @@
 		B56F7D2F160E124000B368F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B56F7D2E160E124000B368F0 /* 土娃动物乐园.app */,
+				B56F7D2E160E124000B368F0 /* AnimalStudy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1446,7 +1446,7 @@
 			);
 			name = AnimalStudy;
 			productName = AnimalStudy;
-			productReference = B56F7D2E160E124000B368F0 /* 土娃动物乐园.app */;
+			productReference = B56F7D2E160E124000B368F0 /* AnimalStudy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1744,7 +1744,7 @@
 					"-lxml2",
 					"-lz",
 				);
-				PRODUCT_NAME = "土娃动物乐园";
+				PRODUCT_NAME = AnimalStudy;
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1764,7 +1764,7 @@
 					"-lxml2",
 					"-lz",
 				);
-				PRODUCT_NAME = "土娃动物乐园";
+				PRODUCT_NAME = AnimalStudy;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;

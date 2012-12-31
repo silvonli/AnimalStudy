@@ -38,7 +38,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     // run
     pDirector->runWithScene(pScene);
     
-    CocosDenshion::SimpleAudioEngine::sharedEngine()->setBackgroundMusicVolume(0.4);//设置音量0.0-1.0
+    CocosDenshion::SimpleAudioEngine::sharedEngine()->setBackgroundMusicVolume(0.12);//设置音量0.0-1.0
     CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("bgmusic.mp3", true);
     return true;
 }

@@ -18,8 +18,8 @@
 #define STUDYWORDFONTSSIZE_CN   38                      // 字号
 #define STUDYWORDFONTSSIZE_EN   30
 #define STUDYWORDSIZE_CN        CCSizeMake(190, 90)     // 位置
-#define STUDYWORDSIZE_EN        CCSizeMake(190, 100)
-#define STUDYWORDCOLOR          ccc3(80,64,4)           // 颜色
+#define STUDYWORDSIZE_EN        CCSizeMake(170, 100)
+#define STUDYWORDCOLOR          ccc3(60,64,200)           // 颜色
 
 // 按钮位置
 #define CHINESEBTNPOS           ccp(824, 118)
