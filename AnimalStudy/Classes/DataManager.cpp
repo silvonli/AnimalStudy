@@ -111,10 +111,10 @@ const char* CDataManager::getAreaObjectAnimationFrameNamePrefix(CCString area, i
     return spriteDict->valueForKey("AnimationFrameNamePrefix")->getCString();
 }
 
-bool CDataManager::areaObjectIsAnimal(CCString area, int index)
+bool CDataManager::areaObjectCanStudy(CCString area, int index)
 {
     CCDictionary *spriteDict = getAreaObject(area, index);
-    return spriteDict->valueForKey("IsAnimal")->boolValue();
+    return spriteDict->valueForKey("CanStudy")->boolValue();
 }
 
 const char* CDataManager::getAreaObjectPronunceCN(CCString area, int index)

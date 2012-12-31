@@ -64,7 +64,7 @@ public:
     bool        isAreaObjectAnimationFrameNeedReverse(CCString area, int index);
     float       getAreaObjectAnimationFrameDelay(CCString area, int index);
     const char* getAreaObjectAnimationFrameNamePrefix(CCString area, int index);
-    bool        areaObjectIsAnimal(CCString area, int index);
+    bool        areaObjectCanStudy(CCString area, int index);
     const char* getAreaObjectPronunceCN(CCString area, int index);
     const char* getAreaObjectPronunceEN(CCString area, int index);
     const char* getAreaObjectPronunceJS(CCString area, int index);

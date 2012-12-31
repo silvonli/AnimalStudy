@@ -88,7 +88,6 @@ bool CArea::initWithName(CCString name)
     {        
         const char *frameName = dataManager->getAreaObjectFrameName(_areaName, i);
         CCPoint pos           = dataManager->getAreaObjectPosition(_areaName, i);
-        bool    isAnimal      = dataManager->areaObjectIsAnimal(_areaName, i);
         float   fSclae        = dataManager->getAreaObjectScale(_areaName, i);
         CCSprite *sprite = CCSprite::spriteWithSpriteFrameName(frameName);        
         sprite->setPosition(pos);
@@ -119,7 +118,7 @@ bool CArea::initWithName(CCString name)
             sprite->runAction(CCRepeatForever::actionWithAction(CCAnimate::actionWithAnimation(anim)));
         }
        
-        if (isAnimal) 
+        if (dataManager->areaObjectCanStudy(_areaName, i)) 
         {
             _animalArr.addObject(sprite);
         }

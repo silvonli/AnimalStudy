@@ -15,7 +15,7 @@
 				<integer>72</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<false/>
 			</dict>
 			<dict>
@@ -27,7 +27,7 @@
 				<integer>69</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<false/>
 			</dict>
 			<dict>
@@ -39,7 +39,7 @@
 				<integer>36</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<false/>
 			</dict>
 			<dict>
@@ -57,7 +57,7 @@
 				<real>0.3</real>
 				<key>AnimationFrameNamePrefix</key>
 				<string>haicao</string>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<false/>
 				<key>Scale</key>
 				<real>0.4</real>
@@ -77,7 +77,7 @@
 				<real>0.22</real>
 				<key>AnimationFrameNamePrefix</key>
 				<string>haicao</string>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<false/>
 			</dict>
 			<dict>
@@ -95,7 +95,7 @@
 				<real>0.1</real>
 				<key>AnimationFrameNamePrefix</key>
 				<string>qipao</string>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<false/>
 			</dict>
 			<dict>
@@ -107,7 +107,7 @@
 				<integer>-12</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<false/>
 				<key>Scale</key>
 				<real>0.7</real>
@@ -121,7 +121,7 @@
 				<integer>404</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Haima_Cn.mp3</string>
@@ -145,7 +145,7 @@
 				<integer>238</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Haigui_Cn.mp3</string>
@@ -169,7 +169,7 @@
 				<integer>407</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Haitun_Cn.mp3</string>
@@ -193,7 +193,7 @@
 				<integer>272</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Longxia_Cn.mp3</string>
@@ -217,7 +217,7 @@
 				<integer>104</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Pangxie_Cn.mp3</string>
@@ -241,7 +241,7 @@
 				<integer>615</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Shayu_Cn.mp3</string>
@@ -265,7 +265,7 @@
 				<integer>531</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Xiaoyu_Cn.mp3</string>
@@ -289,7 +289,7 @@
 				<integer>413</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Zhangyu_Cn.mp3</string>
@@ -329,7 +329,7 @@
 				<integer>675</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Laoying_Cn.mp3</string>
@@ -353,7 +353,7 @@
 				<integer>248</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Luotuo_Cn.mp3</string>
@@ -377,7 +377,7 @@
 				<integer>252</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/She_Cn.mp3</string>
@@ -401,7 +401,7 @@
 				<integer>401</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Tuoniao_Cn.mp3</string>
@@ -425,7 +425,7 @@
 				<integer>121</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Xiezi_Cn.mp3</string>
@@ -449,7 +449,7 @@
 				<integer>82</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Xiyi_Cn.mp3</string>
@@ -489,7 +489,7 @@
 				<integer>557</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Eyu_Cn.mp3</string>
@@ -513,7 +513,7 @@
 				<integer>433</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Hema_Cn.mp3</string>
@@ -537,7 +537,7 @@
 				<integer>410</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Qingwa_Cn.mp3</string>
@@ -561,7 +561,7 @@
 				<integer>126</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Woniu_Cn.mp3</string>
@@ -585,7 +585,7 @@
 				<integer>591</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/wugui_Cn.mp3</string>
@@ -609,7 +609,7 @@
 				<integer>167</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Yazi_Cn.mp3</string>
@@ -641,7 +641,7 @@
 				<real>0.08</real>
 				<key>AnimationFrameNamePrefix</key>
 				<string>hudie</string>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Hudie_Cn.mp3</string>
@@ -681,7 +681,7 @@
 				<integer>581</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Zhuomuniao_Cn.mp3</string>
@@ -705,7 +705,7 @@
 				<integer>371</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Yezhu_Cn.mp3</string>
@@ -729,7 +729,7 @@
 				<integer>213</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Tuzi_Cn.mp3</string>
@@ -753,7 +753,7 @@
 				<integer>401</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Songshu_Cn.mp3</string>
@@ -777,7 +777,7 @@
 				<integer>153</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Laohu_Cn.mp3</string>
@@ -801,7 +801,7 @@
 				<integer>402</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Kongque_Cn.mp3</string>
@@ -825,7 +825,7 @@
 				<integer>167</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Houzi_Cn.mp3</string>
@@ -849,7 +849,7 @@
 				<integer>0</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<false/>
 			</dict>
 			<dict>
@@ -867,7 +867,7 @@
 				<real>0.05</real>
 				<key>AnimationFrameNamePrefix</key>
 				<string>xiaohudie</string>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<false/>
 			</dict>
 			<dict>
@@ -885,7 +885,7 @@
 				<real>0.05</real>
 				<key>AnimationFrameNamePrefix</key>
 				<string>xiaohudie</string>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<false/>
 			</dict>
 		</array>
@@ -913,7 +913,7 @@
 				<integer>166</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Xiniu_Cn.mp3</string>
@@ -937,7 +937,7 @@
 				<integer>494</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Lingyang_Cn.mp3</string>
@@ -961,7 +961,7 @@
 				<integer>498</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Lang_Cn.mp3</string>
@@ -985,7 +985,7 @@
 				<integer>207</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Daxiang_Cn.mp3</string>
@@ -1009,7 +1009,7 @@
 				<integer>542</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Changjinglu_Cn.mp3</string>
@@ -1033,7 +1033,7 @@
 				<integer>282</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Baozi_Cn.mp3</string>
@@ -1057,7 +1057,7 @@
 				<integer>502</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
 				<string>pronunce/Banma_Cn.mp3</string>
@@ -1081,7 +1081,7 @@
 				<integer>68</integer>
 				<key>HasAnimation</key>
 				<false/>
-				<key>IsAnimal</key>
+				<key>CanStudy</key>
 				<false/>
 			</dict>
 		</array>
