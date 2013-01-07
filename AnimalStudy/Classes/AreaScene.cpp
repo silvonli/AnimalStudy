@@ -134,7 +134,7 @@ void CArea::animalTapFinished(CCNode* sender)
     int nIndex = sprite->getTag();
     
     CCScene *scene = CStudy::scene(_areaName, nIndex);
-    CCDirector::sharedDirector()->replaceScene(CCTransitionCrossFade::transitionWithDuration(CROSSFADEDELAY,scene));
+    CCDirector::sharedDirector()->replaceScene(CCTransitionCrossFade::transitionWithDuration(STUDY_TRANSITION_DURATION,scene));
 }
 
 void CArea::registerWithTouchDispatcher()

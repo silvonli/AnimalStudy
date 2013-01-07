@@ -180,7 +180,7 @@
 				<key>WordCN</key>
 				<string>海豚</string>
 				<key>WordEN</key>
-				<string>dolphin</string>
+				<string>Dolphin</string>
 				<key>StudyPic</key>
 				<string>studypic/haitun.png</string>
 			</dict>
@@ -204,7 +204,7 @@
 				<key>WordCN</key>
 				<string>龙虾</string>
 				<key>WordEN</key>
-				<string>lobster</string>
+				<string>Lobster</string>
 				<key>StudyPic</key>
 				<string>studypic/longxia.png</string>
 			</dict>
@@ -228,7 +228,7 @@
 				<key>WordCN</key>
 				<string>螃蟹</string>
 				<key>WordEN</key>
-				<string>crab</string>
+				<string>Crab</string>
 				<key>StudyPic</key>
 				<string>studypic/pangxie.png</string>
 			</dict>
@@ -252,7 +252,7 @@
 				<key>WordCN</key>
 				<string>鲨鱼</string>
 				<key>WordEN</key>
-				<string>shark</string>
+				<string>Shark</string>
 				<key>StudyPic</key>
 				<string>studypic/shayu.png</string>
 			</dict>
@@ -276,7 +276,7 @@
 				<key>WordCN</key>
 				<string>小鱼</string>
 				<key>WordEN</key>
-				<string>fish</string>
+				<string>Fish</string>
 				<key>StudyPic</key>
 				<string>studypic/xiaoyu.png</string>
 			</dict>
@@ -300,7 +300,7 @@
 				<key>WordCN</key>
 				<string>章鱼</string>
 				<key>WordEN</key>
-				<string>octopus</string>
+				<string>Octopus</string>
 				<key>StudyPic</key>
 				<string>studypic/zhangyu.png</string>
 			</dict>
@@ -340,7 +340,7 @@
 				<key>WordCN</key>
 				<string>老鹰</string>
 				<key>WordEN</key>
-				<string>eagle</string>
+				<string>Eagle</string>
 				<key>StudyPic</key>
 				<string>studypic/laoying.png</string>
 			</dict>
@@ -364,7 +364,7 @@
 				<key>WordCN</key>
 				<string>骆驼</string>
 				<key>WordEN</key>
-				<string>camel</string>
+				<string>Camel</string>
 				<key>StudyPic</key>
 				<string>studypic/luotuo.png</string>
 			</dict>
@@ -388,7 +388,7 @@
 				<key>WordCN</key>
 				<string>蛇</string>
 				<key>WordEN</key>
-				<string>snake</string>
+				<string>Snake</string>
 				<key>StudyPic</key>
 				<string>studypic/she.png</string>
 			</dict>
@@ -412,7 +412,7 @@
 				<key>WordCN</key>
 				<string>鸵鸟</string>
 				<key>WordEN</key>
-				<string>ostrich</string>
+				<string>Ostrich</string>
 				<key>StudyPic</key>
 				<string>studypic/tuoniao.png</string>
 			</dict>
@@ -436,7 +436,7 @@
 				<key>WordCN</key>
 				<string>蝎子</string>
 				<key>WordEN</key>
-				<string>scorpion</string>
+				<string>Scorpion</string>
 				<key>StudyPic</key>
 				<string>studypic/xiezi.png</string>
 			</dict>
@@ -460,7 +460,7 @@
 				<key>WordCN</key>
 				<string>蜥蜴</string>
 				<key>WordEN</key>
-				<string>lizard</string>
+				<string>Lizard</string>
 				<key>StudyPic</key>
 				<string>studypic/xiyi.png</string>
 			</dict>
@@ -500,7 +500,7 @@
 				<key>WordCN</key>
 				<string>鄂鱼</string>
 				<key>WordEN</key>
-				<string>crocodile</string>
+				<string>Crocodile</string>
 				<key>StudyPic</key>
 				<string>studypic/eyu.png</string>
 			</dict>
@@ -524,7 +524,7 @@
 				<key>WordCN</key>
 				<string>河马</string>
 				<key>WordEN</key>
-				<string>hippo</string>
+				<string>Hippo</string>
 				<key>StudyPic</key>
 				<string>studypic/hema.png</string>
 			</dict>
@@ -548,7 +548,7 @@
 				<key>WordCN</key>
 				<string>青蛙</string>
 				<key>WordEN</key>
-				<string>frog</string>
+				<string>Frog</string>
 				<key>StudyPic</key>
 				<string>studypic/qingwa.png</string>
 			</dict>
@@ -572,7 +572,7 @@
 				<key>WordCN</key>
 				<string>蜗牛</string>
 				<key>WordEN</key>
-				<string>snail</string>
+				<string>Snail</string>
 				<key>StudyPic</key>
 				<string>studypic/woniu.png</string>
 			</dict>
@@ -588,15 +588,15 @@
 				<key>CanStudy</key>
 				<true/>
 				<key>PronunceCN</key>
-				<string>pronunce/wugui_Cn.mp3</string>
+				<string>pronunce/Wugui_Cn.mp3</string>
 				<key>PronunceEN</key>
-				<string>pronunce/wugui_En_Tortoise.mp3</string>
+				<string>pronunce/Wugui_En_Tortoise.mp3</string>
 				<key>PronunceJS</key>
-				<string>pronunce/wugui_Js.mp3</string>
+				<string>pronunce/Wugui_Js.mp3</string>
 				<key>WordCN</key>
 				<string>乌龟</string>
 				<key>WordEN</key>
-				<string>tortoise</string>
+				<string>Tortoise</string>
 				<key>StudyPic</key>
 				<string>studypic/wugui.png</string>
 			</dict>
@@ -620,7 +620,7 @@
 				<key>WordCN</key>
 				<string>鸭子</string>
 				<key>WordEN</key>
-				<string>duck</string>
+				<string>Duck</string>
 				<key>StudyPic</key>
 				<string>studypic/yazi.png</string>
 			</dict>
@@ -652,7 +652,7 @@
 				<key>WordCN</key>
 				<string>蝴蝶</string>
 				<key>WordEN</key>
-				<string>butterfly</string>
+				<string>Butterfly</string>
 				<key>StudyPic</key>
 				<string>studypic/hudie.png</string>
 			</dict>
@@ -704,7 +704,7 @@
 				<key>WordCN</key>
 				<string>啄木鸟</string>
 				<key>WordEN</key>
-				<string>woodpecker</string>
+				<string>Woodpecker</string>
 				<key>StudyPic</key>
 				<string>studypic/zhuomuniao.png</string>
 			</dict>
@@ -728,7 +728,7 @@
 				<key>WordCN</key>
 				<string>野猪</string>
 				<key>WordEN</key>
-				<string>boar</string>
+				<string>Boar</string>
 				<key>StudyPic</key>
 				<string>studypic/yezhu.png</string>
 			</dict>
@@ -752,7 +752,7 @@
 				<key>WordCN</key>
 				<string>兔子</string>
 				<key>WordEN</key>
-				<string>rabbit</string>
+				<string>Rabbit</string>
 				<key>StudyPic</key>
 				<string>studypic/tuzi.png</string>
 			</dict>
@@ -776,7 +776,7 @@
 				<key>WordCN</key>
 				<string>松鼠</string>
 				<key>WordEN</key>
-				<string>squirrel</string>
+				<string>Squirrel</string>
 				<key>StudyPic</key>
 				<string>studypic/songshu.png</string>
 			</dict>
@@ -800,7 +800,7 @@
 				<key>WordCN</key>
 				<string>老虎</string>
 				<key>WordEN</key>
-				<string>tiger</string>
+				<string>Tiger</string>
 				<key>StudyPic</key>
 				<string>studypic/laohu.png</string>
 			</dict>
@@ -824,7 +824,7 @@
 				<key>WordCN</key>
 				<string>孔雀</string>
 				<key>WordEN</key>
-				<string>peacock</string>
+				<string>Peacock</string>
 				<key>StudyPic</key>
 				<string>studypic/kongque.png</string>
 			</dict>
@@ -848,7 +848,7 @@
 				<key>WordCN</key>
 				<string>猴子</string>
 				<key>WordEN</key>
-				<string>monkey</string>
+				<string>Monkey</string>
 				<key>StudyPic</key>
 				<string>studypic/houzi.png</string>
 			</dict>
@@ -962,7 +962,7 @@
 				<key>WordCN</key>
 				<string>羚羊</string>
 				<key>WordEN</key>
-				<string>antelope</string>
+				<string>Antelope</string>
 				<key>StudyPic</key>
 				<string>studypic/lingyang.png</string>
 			</dict>
@@ -986,7 +986,7 @@
 				<key>WordCN</key>
 				<string>狼</string>
 				<key>WordEN</key>
-				<string>wolf</string>
+				<string>Wolf</string>
 				<key>StudyPic</key>
 				<string>studypic/lang.png</string>
 			</dict>
@@ -1010,7 +1010,7 @@
 				<key>WordCN</key>
 				<string>大象</string>
 				<key>WordEN</key>
-				<string>elephant</string>
+				<string>Elephant</string>
 				<key>StudyPic</key>
 				<string>studypic/daxiang.png</string>
 			</dict>
@@ -1034,7 +1034,7 @@
 				<key>WordCN</key>
 				<string>长颈鹿</string>
 				<key>WordEN</key>
-				<string>giraffe</string>
+				<string>Giraffe</string>
 				<key>StudyPic</key>
 				<string>studypic/changjinglu.png</string>
 			</dict>
@@ -1058,7 +1058,7 @@
 				<key>WordCN</key>
 				<string>豹子</string>
 				<key>WordEN</key>
-				<string>leopard</string>
+				<string>Leopard</string>
 				<key>StudyPic</key>
 				<string>studypic/baozi.png</string>
 			</dict>
@@ -1082,7 +1082,7 @@
 				<key>WordCN</key>
 				<string>斑马</string>
 				<key>WordEN</key>
-				<string>zebra</string>
+				<string>Zebra</string>
 				<key>StudyPic</key>
 				<string>studypic/banma.png</string>
 			</dict>

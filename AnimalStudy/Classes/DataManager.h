@@ -10,13 +10,13 @@
 #define AnimalStudy_DataManager_h
 
 
-#define CROSSFADEDELAY          1                       // 场景切换延时
-
+#define AREA_TRANSITION_DURATION          0.4                  // 切换至地区场景动画延时
+#define STUDY_TRANSITION_DURATION         0.4                  // 切换至学习场景动画延时
 // 学习文字
 #define STUDYWORDFONTSNAME_CN   "STHeitiSC-Medium"      // 字体
 #define STUDYWORDFONTSNAME_EN   "Arial-BoldMT"
 #define STUDYWORDFONTSSIZE_CN   38                      // 字号
-#define STUDYWORDFONTSSIZE_EN   30
+#define STUDYWORDFONTSSIZE_EN   28
 #define STUDYWORDSIZE_CN        CCSizeMake(190, 90)     // 位置
 #define STUDYWORDSIZE_EN        CCSizeMake(170, 100)
 #define STUDYWORDCOLOR          ccc3(60,64,200)           // 颜色
@@ -31,9 +31,9 @@
 #define ACTIONSCALE2 CCScaleTo::actionWithDuration(0.2, 1)
 
 // 跳跃动画
-#define ACTIONJUMP1  CCJumpBy::create(0.5,  CCPointMake(0,0), 30, 1)
-#define ACTIONJUMP2  CCJumpBy::create(0.3,  CCPointMake(0,0), 18, 1)
-#define ACTIONJUMP3  CCJumpBy::create(0.2,  CCPointMake(0,0), 12, 1)
+#define ACTIONJUMP1  CCJumpBy::create(0.4,  CCPointMake(0,0), 30, 1)
+#define ACTIONJUMP2  CCJumpBy::create(0.24,  CCPointMake(0,0), 18, 1)
+#define ACTIONJUMP3  CCJumpBy::create(0.16,  CCPointMake(0,0), 12, 1)
 
 #include "cocos2d.h"
 
