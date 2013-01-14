@@ -134,7 +134,7 @@ void CArea::animalTapFinished(CCNode* sender)
     int nIndex = sprite->getTag();
     
     CCScene *scene = CStudy::scene(_areaName, nIndex);
-    CCDirector::sharedDirector()->replaceScene(CCTransitionCrossFade::transitionWithDuration(STUDY_TRANSITION_DURATION,scene));
+    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::transitionWithDuration(STUDY_TRANSITION_DURATION,scene));
 }
 
 void CArea::registerWithTouchDispatcher()
@@ -170,6 +170,6 @@ void CArea::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
 void CArea::btnReturnCallback(CCObject* pSender)
 {
     CCScene *scene = CMainSelect::scene();
-    CCDirector::sharedDirector()->replaceScene(scene);
+    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeUp::transitionWithDuration(AREA_TRANSITION_DURATION,scene));
 }
 

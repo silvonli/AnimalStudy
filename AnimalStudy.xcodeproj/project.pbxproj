@@ -184,7 +184,6 @@
 		B56F7FE7161083B300B368F0 /* DataManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B56F7FE6161083B200B368F0 /* DataManager.cpp */; };
 		B56F7FEB16108BC500B368F0 /* AreaScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B56F7FEA16108BC400B368F0 /* AreaScene.cpp */; };
 		B583492916916B4A00377EDC /* studypic in Resources */ = {isa = PBXBuildFile; fileRef = B583492816916B4A00377EDC /* studypic */; };
-		B583492D1691863C00377EDC /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = B583492C1691863C00377EDC /* iTunesArtwork */; };
 		B598D179167694F3003CC0C2 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B598D178167694F3003CC0C2 /* bgmusic.mp3 */; };
 		B598D17B167696F6003CC0C2 /* studyfg.png in Resources */ = {isa = PBXBuildFile; fileRef = B598D17A167696F6003CC0C2 /* studyfg.png */; };
 		B598D17D16769B28003CC0C2 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = B598D17C16769B28003CC0C2 /* Default-Landscape.png */; };
@@ -198,6 +197,8 @@
 		B5A18EEA16303C7C001316FA /* MainSelectScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5A18EE916303C7B001316FA /* MainSelectScene.cpp */; };
 		B5A18EEC163045EE001316FA /* mainsel in Resources */ = {isa = PBXBuildFile; fileRef = B5A18EEB163045ED001316FA /* mainsel */; };
 		B5A18EEF16312EFA001316FA /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5A18EEE16312EF9001316FA /* Data.plist */; };
+		B5E52B0916A12DB8005B5DC8 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E52B0716A12DB8005B5DC8 /* Icon-72@2x.png */; };
+		B5E52B0A16A12DB8005B5DC8 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = B5E52B0816A12DB8005B5DC8 /* iTunesArtwork */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -591,7 +592,6 @@
 		B56F7FE916108BAE00B368F0 /* AreaScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaScene.h; sourceTree = "<group>"; };
 		B56F7FEA16108BC400B368F0 /* AreaScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AreaScene.cpp; sourceTree = "<group>"; };
 		B583492816916B4A00377EDC /* studypic */ = {isa = PBXFileReference; lastKnownFileType = folder; name = studypic; path = Resources/studypic; sourceTree = "<group>"; };
-		B583492C1691863C00377EDC /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = Resources/iTunesArtwork; sourceTree = "<group>"; };
 		B598D178167694F3003CC0C2 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bgmusic.mp3; path = Resources/bgmusic.mp3; sourceTree = "<group>"; };
 		B598D17A167696F6003CC0C2 /* studyfg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = studyfg.png; path = Resources/studyfg.png; sourceTree = "<group>"; };
 		B598D17C16769B28003CC0C2 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape.png"; path = "Resources/Default-Landscape.png"; sourceTree = "<group>"; };
@@ -607,6 +607,8 @@
 		B5A18EEB163045ED001316FA /* mainsel */ = {isa = PBXFileReference; lastKnownFileType = folder; name = mainsel; path = Resources/mainsel; sourceTree = "<group>"; };
 		B5A18EED16312D86001316FA /* MainSelectScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainSelectScene.h; sourceTree = "<group>"; };
 		B5A18EEE16312EF9001316FA /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Data.plist; path = Resources/Data.plist; sourceTree = "<group>"; };
+		B5E52B0716A12DB8005B5DC8 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "Resources/Icon-72@2x.png"; sourceTree = "<group>"; };
+		B5E52B0816A12DB8005B5DC8 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = Resources/iTunesArtwork; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -686,8 +688,9 @@
 				B598D17A167696F6003CC0C2 /* studyfg.png */,
 				B598D178167694F3003CC0C2 /* bgmusic.mp3 */,
 				B598D17C16769B28003CC0C2 /* Default-Landscape.png */,
+				B5E52B0816A12DB8005B5DC8 /* iTunesArtwork */,
+				B5E52B0716A12DB8005B5DC8 /* Icon-72@2x.png */,
 				B56F7D4C160E124000B368F0 /* Icon-72.png */,
-				B583492C1691863C00377EDC /* iTunesArtwork */,
 				B5A18EEE16312EF9001316FA /* Data.plist */,
 				B56F7D5A160E124000B368F0 /* Info.plist */,
 			);
@@ -1496,7 +1499,8 @@
 				B598D17B167696F6003CC0C2 /* studyfg.png in Resources */,
 				B598D17D16769B28003CC0C2 /* Default-Landscape.png in Resources */,
 				B583492916916B4A00377EDC /* studypic in Resources */,
-				B583492D1691863C00377EDC /* iTunesArtwork in Resources */,
+				B5E52B0916A12DB8005B5DC8 /* Icon-72@2x.png in Resources */,
+				B5E52B0A16A12DB8005B5DC8 /* iTunesArtwork in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1712,7 +1716,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					NDEBUG,
@@ -1729,6 +1733,7 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Release;

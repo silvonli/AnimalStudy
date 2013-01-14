@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
-	<string>土娃动物乐园</string>
+	<string>土蛙动物乐园</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
@@ -13,6 +13,7 @@
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon-72</string>
+		<string>Icon-72@2x</string>
 	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.toowa.${PRODUCT_NAME:rfc1034identifier}</string>
@@ -29,7 +30,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIPrerenderedIcon</key>
-	<false/>
+	<true/>
 	<key>UIRequiredDeviceCapabilities</key>
 	<dict>
 		<key>accelerometer</key>

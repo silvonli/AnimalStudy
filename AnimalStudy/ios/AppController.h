@@ -11,6 +11,7 @@
 @interface AppController : NSObject <UIAccelerometerDelegate, UIAlertViewDelegate, UITextFieldDelegate,UIApplicationDelegate> {
     UIWindow *window;
     RootViewController    *viewController;
+    UIImageView  *splashView;
 }
 
 @end

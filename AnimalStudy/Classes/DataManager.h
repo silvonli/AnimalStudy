@@ -10,8 +10,8 @@
 #define AnimalStudy_DataManager_h
 
 
-#define AREA_TRANSITION_DURATION          0.4                  // 切换至地区场景动画延时
-#define STUDY_TRANSITION_DURATION         0.4                  // 切换至学习场景动画延时
+#define AREA_TRANSITION_DURATION          0.5                  // 换至地区场景动画延时
+#define STUDY_TRANSITION_DURATION         0.5                  // 切换至学习场景动画延时
 // 学习文字
 #define STUDYWORDFONTSNAME_CN   "STHeitiSC-Medium"      // 字体
 #define STUDYWORDFONTSNAME_EN   "Arial-BoldMT"
@@ -31,9 +31,12 @@
 #define ACTIONSCALE2 CCScaleTo::actionWithDuration(0.2, 1)
 
 // 跳跃动画
-#define ACTIONJUMP1  CCJumpBy::create(0.4,  CCPointMake(0,0), 30, 1)
-#define ACTIONJUMP2  CCJumpBy::create(0.24,  CCPointMake(0,0), 18, 1)
-#define ACTIONJUMP3  CCJumpBy::create(0.16,  CCPointMake(0,0), 12, 1)
+const float fTime   = 0.4;
+const float fHeight = 30;
+const float fPct    = 0.6;
+#define ACTIONJUMP1  CCJumpBy::create(fTime,              CCPointMake(0,0),  fHeight, 1)
+#define ACTIONJUMP2  CCJumpBy::create(fTime*pow(fPct,1),  CCPointMake(0,0), fHeight*pow(fPct,1), 1)
+#define ACTIONJUMP3  CCJumpBy::create(fTime*pow(fPct,2),  CCPointMake(0,0), fHeight*pow(fPct,2), 1)
 
 #include "cocos2d.h"
 

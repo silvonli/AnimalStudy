@@ -125,28 +125,28 @@ void CMainSelect::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
     if (touchLocation.y<size.height*3/4.0) 
     {
         CCScene *scene = CArea::scene("ocean");
-        CCDirector::sharedDirector()->replaceScene(CCTransitionCrossFade::transitionWithDuration(AREA_TRANSITION_DURATION,scene));
+        CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::transitionWithDuration(AREA_TRANSITION_DURATION,scene));
     }
 }
 
 void CMainSelect::lakeCallback(CCObject* pSender)
 {
     CCScene *scene = CArea::scene("lack");
-    CCDirector::sharedDirector()->replaceScene(CCTransitionCrossFade::transitionWithDuration(AREA_TRANSITION_DURATION,scene));
+    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::transitionWithDuration(AREA_TRANSITION_DURATION,scene));
 }
 void CMainSelect::forestCallback(CCObject* pSender)
 {
     CCScene *scene = CArea::scene("forest");
-    CCDirector::sharedDirector()->replaceScene(CCTransitionCrossFade::transitionWithDuration(AREA_TRANSITION_DURATION,scene));
+    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::transitionWithDuration(AREA_TRANSITION_DURATION,scene));
 }
 void CMainSelect::desertCallback(CCObject* pSender)
 {
     CCScene *scene = CArea::scene("desert");
-    CCDirector::sharedDirector()->replaceScene(CCTransitionCrossFade::transitionWithDuration(AREA_TRANSITION_DURATION,scene));
+    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::transitionWithDuration(AREA_TRANSITION_DURATION,scene));
 }
 void CMainSelect::prairieCallback(CCObject* pSender)
 {
     CCScene *scene = CArea::scene("prairie");
-    CCDirector::sharedDirector()->replaceScene(CCTransitionCrossFade::transitionWithDuration(AREA_TRANSITION_DURATION,scene));
+    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::transitionWithDuration(AREA_TRANSITION_DURATION,scene));
 
 }

@@ -114,7 +114,7 @@ bool CStudy::initWithAreaAndIndex(CCString area, int nIndex)
 void CStudy::btnReturnCallback(CCObject* pSender)
 {
     CCScene *scene = CArea::scene(_areaName);
-    CCDirector::sharedDirector()->replaceScene(scene);
+    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeUp::transitionWithDuration(STUDY_TRANSITION_DURATION,scene));
 }
 void CStudy::btnChineseCallback(CCObject* pSender)
 {

@@ -54,10 +54,28 @@ static AppDelegate s_sharedApplication;
     //[window addSubview: viewController.view];
     [window makeKeyAndVisible];
 
+    // 启动画面动画
+    splashView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0, 1024, 768)];
+    splashView.image = [UIImage imageNamed:@"Default-Landscape.png"];
+    [viewController.view addSubview:splashView];
+    [viewController.view bringSubviewToFront:splashView];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration: 1.0];
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationDidStopSelector:@selector(startupAnimationDone:finished:context:)];
+    splashView.alpha = 0.0;
+    [UIView commitAnimations];
+    
     [[UIApplication sharedApplication] setStatusBarHidden: YES];
 
     cocos2d::CCApplication::sharedApplication()->run();
     return YES;
+}
+
+
+- (void)startupAnimationDone:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context
+{
+	[splashView removeFromSuperview];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
