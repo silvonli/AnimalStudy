@@ -38,7 +38,7 @@ private:
 private:
     CCString _areaName;
     int      _index;
-    CCSprite *_animal;
+    CCSprite *_studiedSprite;
   
 };
 

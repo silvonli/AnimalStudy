@@ -65,9 +65,9 @@ bool CStudy::initWithAreaAndIndex(CCString area, int nIndex)
     this->addChild(fg);
     
     // 动物
-    _animal = CCSprite::spriteWithFile(dataManager->getAreaObjectStudyPic(_areaName, _index));
-    _animal->setPosition( ccp(size.width/2, size.height/2) );
-    this->addChild(_animal);
+    _studiedSprite = CCSprite::spriteWithFile(dataManager->getAreaObjectStudyPic(_areaName, _index));
+    _studiedSprite->setPosition( ccp(size.width/2, size.height/2) );
+    this->addChild(_studiedSprite);
    
     
     // 按钮
@@ -114,7 +114,7 @@ bool CStudy::initWithAreaAndIndex(CCString area, int nIndex)
 void CStudy::btnReturnCallback(CCObject* pSender)
 {
     CCScene *scene = CArea::scene(_areaName);
-    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeUp::transitionWithDuration(STUDY_TRANSITION_DURATION,scene));
+    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeUp::transitionWithDuration(TRANSITION_DURATION,scene));
 }
 void CStudy::btnChineseCallback(CCObject* pSender)
 {
@@ -144,10 +144,10 @@ void CStudy::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
     CCPoint touchLocation = pTouch->locationInView();		
     touchLocation = CCDirector::sharedDirector()->convertToGL(touchLocation);
         
-    if (CCRect::CCRectContainsPoint(_animal->boundingBox(), touchLocation))
+    if (CCRect::CCRectContainsPoint(_studiedSprite->boundingBox(), touchLocation))
     {// 动物被tap
 
-        _animal->runAction(CCSequence::actions(ACTIONSCALE1, ACTIONSCALE2, NULL));
+        _studiedSprite->runAction(CCSequence::actions(ACTIONSCALE1, ACTIONSCALE2, NULL));
   
         const char * pronunce = dataManager->getAreaObjectPronunceJS(_areaName, _index);
         if (strlen(pronunce) != 0)

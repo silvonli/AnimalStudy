@@ -10,8 +10,8 @@
 #define AnimalStudy_DataManager_h
 
 
-#define AREA_TRANSITION_DURATION          0.5                  // 换至地区场景动画延时
-#define STUDY_TRANSITION_DURATION         0.5                  // 切换至学习场景动画延时
+#define TRANSITION_DURATION          0.5                // 场景动画延时
+
 // 学习文字
 #define STUDYWORDFONTSNAME_CN   "STHeitiSC-Medium"      // 字体
 #define STUDYWORDFONTSNAME_EN   "Arial-BoldMT"
