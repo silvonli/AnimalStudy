@@ -10,8 +10,7 @@
 #define AnimalStudy_DataManager_h
 
 
-#define TRANSITION_DURATION          0.5                // 场景动画延时
-
+#define TRANSITION_DURATION     0.5                     // 场景动画延时
 // 学习文字
 #define STUDYWORDFONTSNAME_CN   "STHeitiSC-Medium"      // 字体
 #define STUDYWORDFONTSNAME_EN   "Arial-BoldMT"
@@ -19,7 +18,7 @@
 #define STUDYWORDFONTSSIZE_EN   28
 #define STUDYWORDSIZE_CN        CCSizeMake(190, 90)     // 位置
 #define STUDYWORDSIZE_EN        CCSizeMake(170, 100)
-#define STUDYWORDCOLOR          ccc3(60,64,200)           // 颜色
+#define STUDYWORDCOLOR          ccc3(60, 64, 200)       // 颜色
 
 // 按钮位置
 #define CHINESEBTNPOS           ccp(824, 118)

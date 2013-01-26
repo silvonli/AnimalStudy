@@ -54,7 +54,7 @@ bool CArea::initWithName(CCString name)
     
     this->setTouchEnabled(true);
     
-    //_animalArr;
+    //_studyObjects;
     _areaName = name;
 
     
@@ -120,7 +120,7 @@ bool CArea::initWithName(CCString name)
        
         if (dataManager->areaObjectCanStudy(_areaName, i)) 
         {
-            _animalArr.addObject(sprite);
+            _studyObjects.addObject(sprite);
         }
         
     }
@@ -152,15 +152,15 @@ void CArea::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
     CCPoint touchLocation = pTouch->locationInView();		
     touchLocation = CCDirector::sharedDirector()->convertToGL(touchLocation);
     
-    for(int i = _animalArr.count()-1; i>=0 ; --i)
+    for(int i = _studyObjects.count()-1; i>=0 ; --i)
 	{
-		CCSprite *tapAnimal = (CCSprite *)_animalArr.objectAtIndex(i);
+		CCSprite *tapedSprite = (CCSprite *)_studyObjects.objectAtIndex(i);
         
-        if (CCRect::CCRectContainsPoint(tapAnimal->boundingBox(), touchLocation))
-        {// 被tap的动物
+        if (CCRect::CCRectContainsPoint(tapedSprite->boundingBox(), touchLocation))
+        {// 被tap的学习物品
                         
             CCFiniteTimeAction* ac = CCCallFuncN::actionWithTarget(this, callfuncN_selector(CArea::animalTapFinished));
-            tapAnimal->runAction(CCSequence::actions(ACTIONJUMP1, ACTIONJUMP2, ACTIONJUMP3, ac, NULL));
+            tapedSprite->runAction(CCSequence::actions(ACTIONJUMP1, ACTIONJUMP2, ACTIONJUMP3, ac, NULL));
             break;
         }
 	}

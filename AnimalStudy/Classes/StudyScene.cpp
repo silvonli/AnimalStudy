@@ -11,6 +11,7 @@
 #include "SimpleAudioEngine.h"
 #include "DataManager.h"
 #include "AreaScene.h"
+
 using namespace cocos2d;
 using namespace CocosDenshion;
 
@@ -64,7 +65,7 @@ bool CStudy::initWithAreaAndIndex(CCString area, int nIndex)
     fg->setPosition( ccp(size.width/2, size.height/2) );
     this->addChild(fg);
     
-    // 动物
+    // 学习物品
     _studiedSprite = CCSprite::spriteWithFile(dataManager->getAreaObjectStudyPic(_areaName, _index));
     _studiedSprite->setPosition( ccp(size.width/2, size.height/2) );
     this->addChild(_studiedSprite);
@@ -145,7 +146,7 @@ void CStudy::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
     touchLocation = CCDirector::sharedDirector()->convertToGL(touchLocation);
         
     if (CCRect::CCRectContainsPoint(_studiedSprite->boundingBox(), touchLocation))
-    {// 动物被tap
+    {// 学习物品被tap
 
         _studiedSprite->runAction(CCSequence::actions(ACTIONSCALE1, ACTIONSCALE2, NULL));
   
@@ -154,6 +155,7 @@ void CStudy::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
         {
             CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(pronunce, false);
         }
+        
     }
 }
 

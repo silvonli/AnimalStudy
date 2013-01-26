@@ -36,8 +36,7 @@ private:
     void animalTapFinished(CCNode* sender);
     
     
-    CCArray _animalArr;
-    
+    CCArray _studyObjects;
     CCString _areaName;
     
 };  
