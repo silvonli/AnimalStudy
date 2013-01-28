@@ -86,8 +86,6 @@ bool CMainSelect::init()
     this->addChild(sprtSun);
     
     // 创建太阳
-       
-
     CCScaleTo *scaleAc1 = CCScaleTo::create(0.1, 1.05);
     CCScaleTo *scaleAc2 = CCScaleTo::create(0.1, 1.08);
     CCScaleTo *scaleAc3 = CCScaleTo::create(0.1, 1.1);
