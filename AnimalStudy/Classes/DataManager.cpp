@@ -23,7 +23,7 @@ CDataManager* CDataManager::getDataManager()
 CDataManager::CDataManager()
 {
     CCString dataPlistFile = CCFileUtils::sharedFileUtils()->fullPathFromRelativePath("Data.plist");
-    _data = CCDictionary::dictionaryWithContentsOfFile(dataPlistFile.getCString());
+    _data = CCDictionary::createWithContentsOfFile(dataPlistFile.getCString());
     _data->retain();
 }
 CDataManager::~CDataManager()

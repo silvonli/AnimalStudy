@@ -25,8 +25,8 @@ static CCPoint polyVegetable[]  = {ccp(417, 341),  ccp(0, 197),  ccp(0,0),    cc
 static CCPoint polyLivestock[]  = {ccp(1024, 632), ccp(603,359), ccp(1024,288)};
 
 // 渐隐动画
-#define ACTIONFADE1 CCTintTo::actionWithDuration(0.1f, 150, 150, 0)
-#define ACTIONFADE2 CCTintTo::actionWithDuration(0.1f, 255, 255, 255)
+#define ACTIONFADE1 CCTintTo::create(0.1f, 150, 150, 0)
+#define ACTIONFADE2 CCTintTo::create(0.1f, 255, 255, 255)
 
 
 CCScene* CMainSelect::scene()
@@ -52,47 +52,47 @@ bool CMainSelect::init()
    
     // 创建背景
     CCSize size = CCDirector::sharedDirector()->getWinSize();
-    CCSprite* backgroud = CCSprite::spriteWithFile("mainsel/bg.png");
+    CCSprite* backgroud = CCSprite::create("mainsel/bg.png");
     backgroud->setPosition( ccp(size.width/2, size.height/2) );
     this->addChild(backgroud);
     
    
-    _fruit = CCSprite::spriteWithFile("mainsel/fruit.png");
+    _fruit = CCSprite::create("mainsel/fruit.png");
     _fruit->setPosition(AREAPOS_FRUIT);
     this->addChild(_fruit);
     
-    _vegetable = CCSprite::spriteWithFile("mainsel/vegetable.png");
+    _vegetable = CCSprite::create("mainsel/vegetable.png");
     _vegetable->setPosition(AREAPOS_VEGETABLE);
     this->addChild(_vegetable);
     
-    _livestock = CCSprite::spriteWithFile("mainsel/livestock.png");
+    _livestock = CCSprite::create("mainsel/livestock.png");
     _livestock->setPosition(AREAPOS_LIVESTOCK);
     this->addChild(_livestock);
     
-    CCSprite *sprtCaoA = CCSprite::spriteWithFile("mainsel/CaoA.png");
+    CCSprite *sprtCaoA = CCSprite::create("mainsel/CaoA.png");
     sprtCaoA->setPosition(AREAPOS_CAOA);
     this->addChild(sprtCaoA);
     
-    CCSprite *sprtCaoB = CCSprite::spriteWithFile("mainsel/CaoB.png");
+    CCSprite *sprtCaoB = CCSprite::create("mainsel/CaoB.png");
     sprtCaoB->setPosition(AREAPOS_CAOB);
     this->addChild(sprtCaoB);
     
-    CCSprite *sprtSunShine = CCSprite::spriteWithFile("mainsel/sunshine.png");
+    CCSprite *sprtSunShine = CCSprite::create("mainsel/sunshine.png");
     sprtSunShine->setPosition(AREAPOS_SUN);
     this->addChild(sprtSunShine);
     
-    CCSprite *sprtSun = CCSprite::spriteWithFile("mainsel/sun.png");
+    CCSprite *sprtSun = CCSprite::create("mainsel/sun.png");
     sprtSun->setPosition(AREAPOS_SUN);
     this->addChild(sprtSun);
     
     // 创建太阳
        
-    CCFiniteTimeAction *delay = CCDelayTime::actionWithDuration(0.1);
-    CCScaleTo *scaleAc1 = CCScaleTo::actionWithDuration(0.1, 1.05);
-    CCScaleTo *scaleAc2 = CCScaleTo::actionWithDuration(0.1, 1.08);
-    CCScaleTo *scaleAc3 = CCScaleTo::actionWithDuration(0.1, 1.1);
-    CCScaleTo *scaleAc4 = CCScaleTo::actionWithDuration(0.1, 1);
-    sprtSunShine->runAction(CCRepeatForever::actionWithAction((CCActionInterval*)CCSequence::actions(scaleAc1, scaleAc2, scaleAc3, scaleAc4, NULL)));
+
+    CCScaleTo *scaleAc1 = CCScaleTo::create(0.1, 1.05);
+    CCScaleTo *scaleAc2 = CCScaleTo::create(0.1, 1.08);
+    CCScaleTo *scaleAc3 = CCScaleTo::create(0.1, 1.1);
+    CCScaleTo *scaleAc4 = CCScaleTo::create(0.1, 1);
+    sprtSunShine->runAction(CCRepeatForever::create((CCActionInterval*)CCSequence::create(scaleAc1, scaleAc2, scaleAc3, scaleAc4, NULL)));
 
     return true;
 }
@@ -125,24 +125,24 @@ bool CMainSelect::polyContainPnt(CCPoint vert[], int numVert, CCPoint test)
 bool CMainSelect::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
 {
     
-    CCPoint touchLocation = pTouch->locationInView();
+    CCPoint touchLocation = pTouch->getLocationInView();
     touchLocation = CCDirector::sharedDirector()->convertToGL(touchLocation);
     
     
     // 哪个区被tap
     if (polyContainPnt(polyFruit, sizeof(polyFruit)/sizeof(CCPoint), touchLocation))
     {
-        _fruit->runAction(CCSequence::actions(ACTIONFADE1, ACTIONFADE2, NULL));
+        _fruit->runAction(CCSequence::create(ACTIONFADE1, ACTIONFADE2, NULL));
         _tapedArea = "fruit";
     }
     else if (polyContainPnt(polyVegetable, sizeof(polyVegetable)/sizeof(CCPoint), touchLocation))
     {
-        _vegetable->runAction(CCSequence::actions(ACTIONFADE1, ACTIONFADE2, NULL));
+        _vegetable->runAction(CCSequence::create(ACTIONFADE1, ACTIONFADE2, NULL));
         _tapedArea = "vegetable";
     }
     else if (polyContainPnt(polyLivestock, sizeof(polyLivestock)/sizeof(CCPoint), touchLocation))
     {
-        _livestock->runAction(CCSequence::actions(ACTIONFADE1, ACTIONFADE2, NULL));
+        _livestock->runAction(CCSequence::create(ACTIONFADE1, ACTIONFADE2, NULL));
         _tapedArea = "livestock";
     }
     else
@@ -158,5 +158,5 @@ void CMainSelect::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
     if (_tapedArea.length() != 0)
     {
         CCScene *scene = CArea::scene(_tapedArea);
-        CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::transitionWithDuration(TRANSITION_DURATION,scene));
+        CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::create(TRANSITION_DURATION,scene));
     }}

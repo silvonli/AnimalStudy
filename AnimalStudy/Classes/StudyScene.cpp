@@ -57,16 +57,16 @@ bool CStudy::initWithAreaAndIndex(CCString area, int nIndex)
     
     // 背景
     CCSize size = CCDirector::sharedDirector()->getWinSize();
-    CCSprite* bg = CCSprite::spriteWithFile(dataManager->getAreaFileStudyBackground(_areaName));
+    CCSprite* bg = CCSprite::create(dataManager->getAreaFileStudyBackground(_areaName));
     bg->setPosition( ccp(size.width/2, size.height/2) );
     this->addChild(bg);
     
-    CCSprite* fg = CCSprite::spriteWithFile(dataManager->getAreaFileStudyForeground(_areaName));
+    CCSprite* fg = CCSprite::create(dataManager->getAreaFileStudyForeground(_areaName));
     fg->setPosition( ccp(size.width/2, size.height/2) );
     this->addChild(fg);
     
     // 学习物品
-    _studiedSprite = CCSprite::spriteWithFile(dataManager->getAreaObjectStudyPic(_areaName, _index));
+    _studiedSprite = CCSprite::create(dataManager->getAreaObjectStudyPic(_areaName, _index));
     _studiedSprite->setPosition( ccp(size.width/2, size.height/2) );
     this->addChild(_studiedSprite);
    
@@ -92,12 +92,12 @@ bool CStudy::initWithAreaAndIndex(CCString area, int nIndex)
     pEnglish->setPosition( ENGILISHBTNPOS );
     
     // 文字
-    CCLabelTTF* wordCN = CCLabelTTF::labelWithString(dataManager->getAreaObjectWordCN(_areaName, _index), STUDYWORDSIZE_CN, kCCTextAlignmentCenter, kCCVerticalTextAlignmentCenter, STUDYWORDFONTSNAME_CN, STUDYWORDFONTSSIZE_CN);
+    CCLabelTTF* wordCN = CCLabelTTF::create(dataManager->getAreaObjectWordCN(_areaName, _index), STUDYWORDFONTSNAME_CN, STUDYWORDFONTSSIZE_CN, STUDYWORDSIZE_CN, kCCTextAlignmentCenter, kCCVerticalTextAlignmentCenter);
     wordCN->setAnchorPoint(ccp(0,0));
     wordCN->setColor(STUDYWORDCOLOR);
     pChinese->addChild(wordCN);
     
-    CCLabelTTF* wordEN = CCLabelTTF::labelWithString(dataManager->getAreaObjectWordEN(_areaName, _index),STUDYWORDSIZE_EN, kCCTextAlignmentCenter, kCCVerticalTextAlignmentCenter, STUDYWORDFONTSNAME_EN, STUDYWORDFONTSSIZE_EN);
+    CCLabelTTF* wordEN = CCLabelTTF::create(dataManager->getAreaObjectWordEN(_areaName, _index), STUDYWORDFONTSNAME_EN, STUDYWORDFONTSSIZE_EN, STUDYWORDSIZE_EN, kCCTextAlignmentCenter, kCCVerticalTextAlignmentCenter);
     wordEN->setAnchorPoint(ccp(0,0));
     wordEN->setColor(STUDYWORDCOLOR);
     pEnglish->addChild(wordEN);
@@ -115,7 +115,7 @@ bool CStudy::initWithAreaAndIndex(CCString area, int nIndex)
 void CStudy::btnReturnCallback(CCObject* pSender)
 {
     CCScene *scene = CArea::scene(_areaName);
-    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeUp::transitionWithDuration(TRANSITION_DURATION,scene));
+    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeUp::create(TRANSITION_DURATION,scene));
 }
 void CStudy::btnChineseCallback(CCObject* pSender)
 {
@@ -142,13 +142,13 @@ bool CStudy::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
 
 void CStudy::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
 {    
-    CCPoint touchLocation = pTouch->locationInView();		
+    CCPoint touchLocation = pTouch->getLocationInView();
     touchLocation = CCDirector::sharedDirector()->convertToGL(touchLocation);
         
-    if (CCRect::CCRectContainsPoint(_studiedSprite->boundingBox(), touchLocation))
+    if (_studiedSprite->boundingBox().containsPoint(touchLocation))
     {// 学习物品被tap
 
-        _studiedSprite->runAction(CCSequence::actions(ACTIONSCALE1, ACTIONSCALE2, NULL));
+        _studiedSprite->runAction(CCSequence::create(ACTIONSCALE1, ACTIONSCALE2, NULL));
   
         const char * pronunce = dataManager->getAreaObjectPronunceJS(_areaName, _index);
         if (strlen(pronunce) != 0)

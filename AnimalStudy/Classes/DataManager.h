@@ -26,8 +26,8 @@
 #define RETURNBTNPOS            ccp(60, 708)            
 
 // 放大动画
-#define ACTIONSCALE1 CCScaleTo::actionWithDuration(0.2, 1.1)
-#define ACTIONSCALE2 CCScaleTo::actionWithDuration(0.2, 1)
+#define ACTIONSCALE1 CCScaleTo::create(0.2, 1.1)
+#define ACTIONSCALE2 CCScaleTo::create(0.2, 1)
 
 // 跳跃动画
 const float fTime   = 0.4;

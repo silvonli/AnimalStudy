@@ -33,7 +33,7 @@ bool CMainSelect::init()
    
     // 创建背景
     CCSize size = CCDirector::sharedDirector()->getWinSize();
-    CCSprite* backgroud = CCSprite::spriteWithFile("mainsel/bg.png");
+    CCSprite* backgroud = CCSprite::create("mainsel/bg.png");
     backgroud->setPosition( ccp(size.width/2, size.height/2) );
     this->addChild(backgroud);
     
@@ -70,36 +70,36 @@ bool CMainSelect::init()
     
     // 创建sprite sheet
     CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("mainsel/jingyu.plist");
-    CCSpriteBatchNode *spriteSheet = CCSpriteBatchNode::batchNodeWithFile("mainsel/jingyu.png");
+    CCSpriteBatchNode *spriteSheet = CCSpriteBatchNode::create("mainsel/jingyu.png");
     this->addChild(spriteSheet);
     
     // 创建对象
-    CCSprite *sprite = CCSprite::spriteWithSpriteFrameName("jingyu01.png");        
+    CCSprite *sprite = CCSprite::createWithSpriteFrameName("jingyu01.png");        
     sprite->setPosition(ccp(920,220));
     spriteSheet->addChild(sprite, 0);
           
-    CCArray *arrShang = CCArray::array(); // 动画帧数组
+    CCArray *arrShang = CCArray::create(); // 动画帧数组
     for(int i=1; i<=8; ++i)
     {     
-        CCString *name = CCString::stringWithFormat("jingyu%02d.png", i);
+        CCString *name = CCString::createWithFormat("jingyu%02d.png", i);
         arrShang->addObject(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(name->getCString()));
     }
     
-    CCArray *arrPeng = CCArray::array(); // 动画帧数组
+    CCArray *arrPeng = CCArray::create(); // 动画帧数组
     for(int i=9; i<=11; ++i)
     {
-        CCString *name = CCString::stringWithFormat("jingyu%02d.png", i);
+        CCString *name = CCString::createWithFormat("jingyu%02d.png", i);
         arrPeng->addObject(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(name->getCString()));
     }
-    CCArray *arrPengRev = CCArray::arrayWithArray(arrPeng);
+    CCArray *arrPengRev = CCArray::createWithArray(arrPeng);
     arrPengRev->reverseObjects();
     arrPeng->addObjectsFromArray(arrPengRev);
     
-    CCFiniteTimeAction *delay = CCDelayTime::actionWithDuration(1);
+    CCFiniteTimeAction *delay = CCDelayTime::create(1);
 
-    CCAnimate* anShang = CCAnimate::actionWithAnimation(CCAnimation::animationWithSpriteFrames(arrShang, 0.25));
-    CCAnimate* anPeng  = CCAnimate::actionWithAnimation(CCAnimation::animationWithSpriteFrames(arrPeng, 0.15));
-    sprite->runAction(CCRepeatForever::actionWithAction((CCActionInterval*)CCSequence::actions(anShang, delay, anPeng,anPeng, anPeng, anPeng, anPeng, anShang->reverse(),delay,delay,delay,NULL)));
+    CCAnimate* anShang = CCAnimate::create(CCAnimation::createWithSpriteFrames(arrShang, 0.25));
+    CCAnimate* anPeng  = CCAnimate::create(CCAnimation::createWithSpriteFrames(arrPeng, 0.15));
+    sprite->runAction(CCRepeatForever::create((CCActionInterval*)CCSequence::create(anShang, delay, anPeng,anPeng, anPeng, anPeng, anPeng, anShang->reverse(),delay,delay,delay,NULL)));
     return true;
 }
 
@@ -117,7 +117,7 @@ bool CMainSelect::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
 
 void CMainSelect::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
 {    
-    CCPoint touchLocation = pTouch->locationInView();		
+    CCPoint touchLocation = pTouch->getLocationInView();		
     touchLocation = CCDirector::sharedDirector()->convertToGL(touchLocation);
       
     // tap 海洋
@@ -125,28 +125,28 @@ void CMainSelect::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
     if (touchLocation.y<size.height*3/4.0) 
     {
         CCScene *scene = CArea::scene("ocean");
-        CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::transitionWithDuration(TRANSITION_DURATION,scene));
+        CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::create(TRANSITION_DURATION,scene));
     }
 }
 
 void CMainSelect::lakeCallback(CCObject* pSender)
 {
     CCScene *scene = CArea::scene("lack");
-    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::transitionWithDuration(TRANSITION_DURATION,scene));
+    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::create(TRANSITION_DURATION,scene));
 }
 void CMainSelect::forestCallback(CCObject* pSender)
 {
     CCScene *scene = CArea::scene("forest");
-    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::transitionWithDuration(TRANSITION_DURATION,scene));
+    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::create(TRANSITION_DURATION,scene));
 }
 void CMainSelect::desertCallback(CCObject* pSender)
 {
     CCScene *scene = CArea::scene("desert");
-    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::transitionWithDuration(TRANSITION_DURATION,scene));
+    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::create(TRANSITION_DURATION,scene));
 }
 void CMainSelect::prairieCallback(CCObject* pSender)
 {
     CCScene *scene = CArea::scene("prairie");
-    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::transitionWithDuration(TRANSITION_DURATION,scene));
+    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeDown::create(TRANSITION_DURATION,scene));
 
 }
