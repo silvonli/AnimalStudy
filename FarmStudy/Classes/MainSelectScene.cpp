@@ -25,8 +25,8 @@ static CCPoint polyVegetable[]  = {ccp(417, 341),  ccp(0, 197),  ccp(0,0),    cc
 static CCPoint polyLivestock[]  = {ccp(1024, 632), ccp(603,359), ccp(1024,288)};
 
 // 渐隐动画
-#define ACTIONFADE1 CCTintTo::create(0.1f, 150, 150, 0)
-#define ACTIONFADE2 CCTintTo::create(0.1f, 255, 255, 255)
+#define ACTIONTINT1 CCTintTo::create(0.1f, 150, 150, 0)
+#define ACTIONTINT2 CCTintTo::create(0.1f, 255, 255, 255)
 
 
 CCScene* CMainSelect::scene()
@@ -132,17 +132,17 @@ bool CMainSelect::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
     // 哪个区被tap
     if (polyContainPnt(polyFruit, sizeof(polyFruit)/sizeof(CCPoint), touchLocation))
     {
-        _fruit->runAction(CCSequence::create(ACTIONFADE1, ACTIONFADE2, NULL));
+        _fruit->runAction(CCSequence::create(ACTIONTINT1, ACTIONTINT2, NULL));
         _tapedArea = "fruit";
     }
     else if (polyContainPnt(polyVegetable, sizeof(polyVegetable)/sizeof(CCPoint), touchLocation))
     {
-        _vegetable->runAction(CCSequence::create(ACTIONFADE1, ACTIONFADE2, NULL));
+        _vegetable->runAction(CCSequence::create(ACTIONTINT1, ACTIONTINT2, NULL));
         _tapedArea = "vegetable";
     }
     else if (polyContainPnt(polyLivestock, sizeof(polyLivestock)/sizeof(CCPoint), touchLocation))
     {
-        _livestock->runAction(CCSequence::create(ACTIONFADE1, ACTIONFADE2, NULL));
+        _livestock->runAction(CCSequence::create(ACTIONTINT1, ACTIONTINT2, NULL));
         _tapedArea = "livestock";
     }
     else
