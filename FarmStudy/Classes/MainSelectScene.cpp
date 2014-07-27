@@ -86,10 +86,10 @@ bool CMainSelect::init()
     this->addChild(sprtSun);
     
     // 创建太阳
-    CCScaleTo *scaleAc1 = CCScaleTo::create(0.1, 1.05);
-    CCScaleTo *scaleAc2 = CCScaleTo::create(0.1, 1.08);
-    CCScaleTo *scaleAc3 = CCScaleTo::create(0.1, 1.1);
-    CCScaleTo *scaleAc4 = CCScaleTo::create(0.1, 1);
+    CCScaleTo *scaleAc1 = CCScaleTo::create(0.5, 1.05);
+    CCScaleTo *scaleAc2 = CCScaleTo::create(0.5, 1.08);
+    CCScaleTo *scaleAc3 = CCScaleTo::create(0.5, 1.1);
+    CCScaleTo *scaleAc4 = CCScaleTo::create(0.5, 1);
     sprtSunShine->runAction(CCRepeatForever::create((CCActionInterval*)CCSequence::create(scaleAc1, scaleAc2, scaleAc3, scaleAc4, NULL)));
 
     return true;
